@@ -1,0 +1,81 @@
+# Trckr
+
+This is the documentation of the trckr application. We develop the application for the PSIT4 module of the Zurich University of Applied Sciences (ZHAW).
+
+## Our Vision
+
+Trckr is a unique time tracking tool which stands out from the competition with an intuitive user interface and a focus on business features. In addition to the easy to use and project-oriented time tracking, Trckr offers features for teams to distribute tasks between users and respond proactively to time delays. We offer great value from the self-employed up to large teams for little effort.
+
+## Main Features
+
+* Register users
+* Login
+* Create projects
+* Create tasks on projects
+* Track time on tasks
+* Logout
+
+## Architecture Sketch
+
+![Architecture](./img/architecture.png)
+
+## Technlogies & Tools
+
+### Backend
+
+* Python (Django)
+* PostgreSQL
+
+### Frontend
+
+* JavaScript (Vue.js)
+
+### Tools
+
+* Trello (Scrum Board)
+* Google Docs (Documents)
+* Google Slides (Presentations)
+* Documentation (GitHub Pages)
+
+## Roles
+
+### Product Owner
+
+* Dimitri Balidis
+
+### Scrum Master
+
+* David Pacassi Torrico
+
+### Team Members
+
+#### Backend
+
+* Luca Christen
+* Savino Jossi
+* Daniel Milenkovic
+
+### Frontend
+
+* Gabriel Ankeshian
+* Angelica Nominato
+* David Pacassi Torrico
+
+## Scrum
+
+### Definition of Ready
+
+* The user stories are defined.
+* The acceptance criteria of the user stories are defined.
+* The dependencies between the user stories were identified.
+* The user stories were estimated by the development team.
+* The documentation has been started and is subject to change.
+
+### Definition of Done
+
+* The unit tests are green and the test coverage is at least 85% or more.
+* Acceptance tests coded and passed.
+* The code were reviewed attending all coding-standards.
+* The documentation has been adapted to the changes.
+* The code has been approved by the product owner.
+
