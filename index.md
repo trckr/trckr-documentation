@@ -55,7 +55,7 @@ Trckr is a unique time tracking tool which stands out from the competition with 
 * Savino Jossi
 * Daniel Milenkovic
 
-### Frontend
+#### Frontend
 
 * Gabriel Ankeshian
 * Angelica Nominato
