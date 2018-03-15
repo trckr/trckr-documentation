@@ -23,17 +23,17 @@ Trckr is a unique time tracking tool which stands out from the competition with 
 
 ### Backend
 
-* Python (Django)
-* PostgreSQL
+* Python ([Django](https://www.djangoproject.com/))
+* [PostgreSQL](https://www.postgresql.org/)
 
 ### Frontend
 
-* JavaScript (Vue.js)
+* JavaScript ([Vue.js](https://vuejs.org/))
 
 ### Tools
 
-* Trello (Scrum Board)
-* Google Docs (Documents)
+* [Trello (Scrum Board)](https://trello.com/b/MvMOhuQv/trckr)
+* [Google Docs (Documents)](https://docs.google.com/document/d/1TdwhZx0khze8sM7WRxGhiDrvJfaQ-fk7Ok_TBcYImM0/edit?usp=sharing)
 * Google Slides (Presentations)
 * Documentation (GitHub Pages)
 
@@ -41,25 +41,25 @@ Trckr is a unique time tracking tool which stands out from the competition with 
 
 ### Product Owner
 
-* Dimitri Balidis
+* [Dimitri Balidis](mailto:baliddim@students.zhaw.ch)
 
 ### Scrum Master
 
-* David Pacassi Torrico
+* [David Pacassi Torrico](mailto:pacasdav@students.zhaw.ch)
 
 ### Team Members
 
 #### Backend
-* [Test](mailto:test@test.com)
-* Luca Christen
-* Savino Jossi
-* Daniel Milenkovic
+
+* [Luca Christen](mailto:chrisluc@students.zhaw.ch)
+* [Savino Jossi](mailto:jossisav@students.zhaw.ch)
+* [Daniel Milenkovic](mailto:milendan@students.zhaw.ch)
 
 #### Frontend
 
-* Gabriel Ankeshian
-* Angelica Nominato
-* David Pacassi Torrico
+* [Gabriel Ankeshian](mailto:ankesgab@students.zhaw.ch)
+* [Angelica Nominator](mailto:moreiane@students.zhaw.ch)
+* [David Pacassi Torrico](mailto:pacasdav@students.zhaw.ch)
 
 ## Scrum
 
