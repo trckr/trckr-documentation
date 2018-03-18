@@ -39,6 +39,11 @@ Trckr is a unique time tracking tool which stands out from the competition with 
 * Google Slides (Presentations)
 * Documentation (GitHub Pages)
 
+### Data
+
+* Data model:
+* Archiving and Backup model:
+
 ## Roles
 
 ### Product Owner
@@ -81,7 +86,7 @@ Trckr is a unique time tracking tool which stands out from the competition with 
 * The documentation has been adapted to the changes.
 * The code has been approved by the product owner.
 
-### Non-functional requirements
+### Non-Functional Requirements
 
 * Fast and reliable
 * Totally scalable from small businesses to big enterprises
@@ -89,10 +94,15 @@ Trckr is a unique time tracking tool which stands out from the competition with 
 
 ### Principles
 
-*
+* E.g. high cohesion & low coupling, SOLID etc.
 
 ### Constraints
 
 * Time: Development only until week 20
 * Team size: limited amount of team members (three frontend- and three backend-developers)
 
+# Deployment
+
+* Description of the deployment
+
+# Decision Log
