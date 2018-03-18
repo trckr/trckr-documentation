@@ -74,12 +74,13 @@ Trckr is a web based application. The web frontend is developed with Javascriüt
 
 ### SCRUM Infos
 * Sprints:
-Sprint 0: Project Setup 09.03.2018 - 16.03.2018
-Sprint 1: 16.03.2018 - 30.03.2018
-Sprint 2: 30.03.2018 - 13.04.2018
-Sprint 3: 13.04.2018 - 27.04.2018
-Sprint 4: 27.04.2018 - 11.05.2018
-Sprint 5: 11.05.2018 - 25.05.2018
+** Sprint 0: Project Setup 09.03.2018 - 16.03.2018
+** Sprint 1: 16.03.2018 - 30.03.2018
+** Sprint 2: 30.03.2018 - 13.04.2018
+** Sprint 3: 13.04.2018 - 27.04.2018
+** Sprint 4: 27.04.2018 - 11.05.2018
+** Sprint 5: 11.05.2018 - 25.05.2018
+
 ### Definition of Ready
 
 * The user stories are defined.
