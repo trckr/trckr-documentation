@@ -13,7 +13,9 @@ Trckr is a unique time tracking tool which stands out from the competition with 
 * Create projects
 * Create tasks on projects
 * Track time on tasks
+
 * Logout
+
 
 ## Architecture Sketch
 
@@ -78,4 +80,19 @@ Trckr is a unique time tracking tool which stands out from the competition with 
 * The code were reviewed attending all coding-standards.
 * The documentation has been adapted to the changes.
 * The code has been approved by the product owner.
+
+### Non-functional requirements
+
+* Fast and reliable
+* Totally scalable from small businesses to big enterprises
+* Secure through self-hosting
+
+### Principles
+
+*
+
+### Constraints
+
+* Time: Development only until week 20
+* Team size: limited amount of team members (three frontend- and three backend-developers)
 
