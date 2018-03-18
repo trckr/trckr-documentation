@@ -106,3 +106,5 @@ Trckr is a unique time tracking tool which stands out from the competition with 
 * Description of the deployment
 
 ## Decision Log
+
+* We decided to use ... because of ...
