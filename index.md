@@ -19,6 +19,8 @@ Trckr is a unique time tracking tool which stands out from the competition with 
 
 ## Architecture Sketch
 
+Trckr is a web based application. The web frontend is developed with Javascriüt and has access to a PostgreSQL database via the backend, which is written in Python. 
+
 ![Architecture](./img/architecture.png)
 
 ## Technlogies & Tools
@@ -70,6 +72,14 @@ Trckr is a unique time tracking tool which stands out from the competition with 
 
 ## Scrum
 
+### SCRUM Infos
+* Sprints:
+Sprint 0: Project Setup 09.03.2018 - 16.03.2018
+Sprint 1: 16.03.2018 - 30.03.2018
+Sprint 2: 30.03.2018 - 13.04.2018
+Sprint 3: 13.04.2018 - 27.04.2018
+Sprint 4: 27.04.2018 - 11.05.2018
+Sprint 5: 11.05.2018 - 25.05.2018
 ### Definition of Ready
 
 * The user stories are defined.
@@ -88,9 +98,9 @@ Trckr is a unique time tracking tool which stands out from the competition with 
 
 ### Non-Functional Requirements
 
-* Fast and reliable
-* Totally scalable from small businesses to big enterprises
-* Secure through self-hosting
+* Fast and reliable.
+* Totally scalable from small businesses to big enterprises.
+* Secure through self-hosting.
 
 ### Principles
 
@@ -98,12 +108,13 @@ Trckr is a unique time tracking tool which stands out from the competition with 
 
 ### Constraints
 
-* Time: Development only until week 20
-* Team size: limited amount of team members (three frontend- and three backend-developers)
+* Time: Development only until week 20.
+* Meetings: Daily standup meetings are not possible, due to working hours of the team members.
+* Team size: limited amount of team members (three frontend- and three backend-developers).
 
 ## Deployment
 
-* Description of the deployment
+* Description of the deployment.
 
 ## Decision Log
 
