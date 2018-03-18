@@ -101,8 +101,8 @@ Trckr is a unique time tracking tool which stands out from the competition with 
 * Time: Development only until week 20
 * Team size: limited amount of team members (three frontend- and three backend-developers)
 
-# Deployment
+## Deployment
 
 * Description of the deployment
 
-# Decision Log
+## Decision Log
