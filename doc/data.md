@@ -1,3 +1,3 @@
 # Data
 
-This section of the trckr documenation describes our data model.
+This section of the trckr documentation describes our data model.

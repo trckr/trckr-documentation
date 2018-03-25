@@ -6,7 +6,7 @@ The documentation is devided into multiple chapters:
 
 * [Context](./doc/context.md)
 * [Objectives And Functional Overview](./doc/objectives.md)
-* [Quality Attributes / Non-Functional Requirements)](./doc/quality_attributes.md)
+* [Quality Attributes / Non-Functional Requirements](./doc/quality_attributes.md)
 * [Constraints](./doc/constraints.md)
 * [Principles](./doc/principles.md)
 * [Architecture](./doc/architecture.md)
