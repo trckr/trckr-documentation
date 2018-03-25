@@ -121,8 +121,7 @@ Trckr is a web based application. The web frontend is developed with Javascriüt
 
 | We decide to use...        | because of...           |
 | ------------- |:-------------:|
-| Django     | most of us have python skills through our job or the module Artificial Intelligence .
-               Also, it is very easy to set up.|
+| Django     | most of us have python skills through our job or the module Artificial Intelligence. Also, it is very easy to set up.|
 | VueJS      |       |
-|  | are neat      |
+| PostgreSQL  |       |
 
