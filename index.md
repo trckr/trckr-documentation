@@ -2,7 +2,7 @@
 
 This is the documentation of the trckr application. We develop the application for the PSIT4 module of the Zurich University of Applied Sciences (ZHAW).
 
-The documentation is devided into multiple chapters:
+The documentation is divided into multiple chapters:
 
 * [Context](./doc/context.md)
 * [Objectives And Functional Overview](./doc/objectives.md)
