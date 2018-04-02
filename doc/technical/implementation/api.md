@@ -16,7 +16,7 @@ When a user tries to login the frontend will send a json request with following 
 ```
 {
   "username": <username>,
-  "password": <hashed pw>
+  "password": <pw>
 }
 ```
 
