@@ -34,6 +34,10 @@ or a success:
 ```
 The token is then used to authenticate for every action the user wants to perform.
 
+#### Usage
+
+To use the token to authenticate other api calls, the token has to be put into the header: `Authorization: JWT <token>`. The current life time of a token is 365 days.
+
 ### User logout
 
 tbd
