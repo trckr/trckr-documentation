@@ -17,15 +17,15 @@ The documentation is divided into multiple chapters:
 **Technical**
 
 * Architecture
-* * [Overview](./doc/technical/architecture/architecture.md)
-* * [Domain Model](./doc/technical/architecture/domain_model.md)
+  * [Overview](./doc/technical/architecture/architecture.md)
+  * [Domain Model](./doc/technical/architecture/domain_model.md)
 * Implementation
-* * [API](./doc/technical/implementation/api.md)
-* * [Code](./doc/technical/implementation/code.md)
-* * [External Interfaces](./doc/technical/implementation/external_interfaces.md)
+  * [API](./doc/technical/implementation/api.md)
+  * [Code](./doc/technical/implementation/code.md)
+  * [External Interfaces](./doc/technical/implementation/external_interfaces.md)
 * Infrastructure
-* * [Servers](./doc/technical/infrastructure/servers.md)
-* * [Deployment](./doc/technical/infrastructure/deployment.md)
+  * [Servers](./doc/technical/infrastructure/servers.md)
+  * [Deployment](./doc/technical/infrastructure/deployment.md)
 
 ## The Trckr Team
 
