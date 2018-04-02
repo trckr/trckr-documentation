@@ -6,7 +6,7 @@ In this part of the trckr documentation, the software architecture is explained.
 
 Trckr is a web based application. The web frontend is developed with Javascript and has access to a PostgreSQL database via the backend, which is written in Python.
 
-![Architecture](../img/architecture.png)
+![Architecture](../../../img/architecture.png)
 
 ## Technologies & Tools
 
