@@ -6,9 +6,11 @@ Trckr relies on a well defined API to communicate between the backend and the fr
 
 ### Session Authentication
 
-https://trckr.trvlr.ch/api/auth/login/
+[https://trckr.trvlr.ch/api/auth/login/](https://trckr.trvlr.ch/api/auth/login/)
 
 ### Token Authentication
+
+[https://trckr.trvlr.ch/api/token-auth/](https://trckr.trvlr.ch/api/token-auth/)
 
 When a user tries to login the frontend will send a json request with following attributes:
 ```
@@ -33,7 +35,8 @@ or a success:
 The token is then used to authenticate for every action the user wants to perform.
 
 ### User logout
-https://trckr.trvlr.ch/api/token-auth/
+
+tbd
 
 ### Token Revocation
 
