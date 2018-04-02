@@ -19,6 +19,9 @@ Trckr is a web based application. The web frontend is developed with Javascript 
 
 * JavaScript ([Vue.js](https://vuejs.org/))
 
+Tho following graphic shows a draft of the components we plan to implement into the frontend. Changes may be needed.
+![Frontend Architecture](https://github.com/trckr/trckr-frontend/blob/master/documentation/trckr-frontend-architecture.png)
+
 ## Interface communication
 This paragraph explains the communication between the backend and the frontend through json objects.
 
