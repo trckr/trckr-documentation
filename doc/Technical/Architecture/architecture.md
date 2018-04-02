@@ -22,32 +22,7 @@ Trckr is a web based application. The web frontend is developed with Javascript 
 Tho following graphic shows a draft of the components we plan to implement into the frontend. Changes may be needed.
 ![Frontend Architecture](https://github.com/trckr/trckr-frontend/blob/master/documentation/trckr-frontend-architecture.png)
 
-## Interface communication
-This paragraph explains the communication between the backend and the frontend through json objects.
 
-### User registration
+## Domain Model
 
-### User login
-When a user tries to login the frontend will send a json request with following attributes:
-```
-{
-  "username": <username>,
-  "password": <hashed pw>
-}
-```
-
-The backend will reply with either a fail:
-```
-{
-  "non_field_errors":["Unable to log in with provided credentials."]
-}
-```
-or a success:
-```
-{
-  "token":"eyJ0eXAiOiJKV1QiLCJhb[...]vJzuiWUvZxytJ9yscldA"
-}
-```
-The token is then used to authenticate for every action the user wants to perform.
-
-### User logout
+The domain model is further described [here](domain_model.md).
