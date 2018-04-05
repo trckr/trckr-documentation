@@ -45,3 +45,91 @@ tbd
 ### Token Revocation
 
 tbd
+
+## Projects
+
+### List Projects
+
+GET [https://trckr-api.trvlr.ch/api/projects/](https://trckr-api.trvlr.ch/api/projects/)
+
+Response:
+```
+[
+    {
+        "id": 1,
+        "name": "test 1",
+        "description": "foobar",
+        "modifiedDate": "2018-04-04T19:29:43.296915Z",
+        "createdDate": "2018-04-04T19:29:43.296847Z"
+    },
+    {
+        "id": 2,
+        "name": "test project 2",
+        "description": "hello",
+        "modifiedDate": "2018-04-04T19:29:57.017325Z",
+        "createdDate": "2018-04-04T19:29:57.017285Z"
+    }
+]
+```
+
+### Create Project
+
+POST [https://trckr-api.trvlr.ch/api/projects/](https://trckr-api.trvlr.ch/api/projects/)
+
+Request body:
+```
+{
+    "name": "test",
+    "description": "foo",
+}
+```
+
+The name is a charfield with a max length of 255 and required. Description is a textfield and optional.
+
+### View Project
+
+GET [https://trckr-api.trvlr.ch/api/projects/<id>/](https://trckr-api.trvlr.ch/api/projects/1/)
+  
+Response:
+```
+{
+    "id": 1,
+    "name": "test 1",
+    "description": "foobar",
+    "modifiedDate": "2018-04-04T19:29:43.296915Z",
+    "createdDate": "2018-04-04T19:29:43.296847Z"
+},
+```
+
+### Update Project
+
+PUT [https://trckr-api.trvlr.ch/api/projects/<id>/](https://trckr-api.trvlr.ch/api/projects/1/)
+
+Request body:
+```
+{
+    "name": "test",
+    "description": "foo",
+}
+```
+
+### Delete Project
+
+DELETE [https://trckr-api.trvlr.ch/api/projects/<id>/](https://trckr-api.trvlr.ch/api/projects/1/)
+
+### View Project Tasks
+
+GET [https://trckr-api.trvlr.ch/api/projects/<id>/tasks/](https://trckr-api.trvlr.ch/api/projects/1/tasks/)
+
+## Tasks
+
+### Create Task
+
+POST [https://trckr-api.trvlr.ch/api/tasks/](https://trckr-api.trvlr.ch/api/tasks/)
+
+### Update Task
+
+PUT [https://trckr-api.trvlr.ch/api/tasks/<id>/](https://trckr-api.trvlr.ch/api/tasks/)
+
+
+
