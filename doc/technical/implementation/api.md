@@ -121,15 +121,60 @@ DELETE [`https://trckr-api.trvlr.ch/api/projects/<id>/`](https://trckr-api.trvlr
 
 GET [`https://trckr-api.trvlr.ch/api/projects/<id>/tasks/`](https://trckr-api.trvlr.ch/api/projects/1/tasks/)
 
+```
+[
+    {
+        "id": 2,
+        "name": "second test task",
+        "description": "foo",
+        "project": 1
+    },
+    {
+        "id": 1,
+        "name": "test task",
+        "description": "foo",
+        "project": 1
+    }
+]
+```
+
 ## Tasks
 
 ### Create Task
 
 POST [`https://trckr-api.trvlr.ch/api/tasks/`](https://trckr-api.trvlr.ch/api/tasks/)
 
+Request body:
+```
+{
+    "name": "second test task",
+    "description": "foo",
+    "project": 1
+}
+```
+
+Response:
+```
+HTTP 201 Created
+
+{
+    "id": 2,
+    "name": "second test task",
+    "description": "foo",
+    "project": 1
+}
+```
 ### Update Task
 
 PUT [`https://trckr-api.trvlr.ch/api/tasks/<id>/`](https://trckr-api.trvlr.ch/api/tasks/)
 
+Request body:
+```
+{
+    "name": "second test task",
+    "description": "bar",
+    "project": 1
+}
+```
 
 
