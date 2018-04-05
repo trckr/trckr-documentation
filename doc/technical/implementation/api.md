@@ -6,11 +6,11 @@ Trckr relies on a well defined API to communicate between the backend and the fr
 
 ### Session Authentication
 
-[https://trckr.trvlr.ch/api/auth/login/](https://trckr.trvlr.ch/api/auth/login/)
+[`https://trckr.trvlr.ch/api/auth/login/`](https://trckr.trvlr.ch/api/auth/login/)
 
 ### Token Authentication
 
-[https://trckr.trvlr.ch/api/token-auth/](https://trckr.trvlr.ch/api/token-auth/)
+[`https://trckr.trvlr.ch/api/token-auth/`](https://trckr.trvlr.ch/api/token-auth/)
 
 When a user tries to login the frontend will send a json request with following attributes:
 ```
@@ -50,7 +50,7 @@ tbd
 
 ### List Projects
 
-GET [https://trckr-api.trvlr.ch/api/projects/](https://trckr-api.trvlr.ch/api/projects/)
+GET [`https://trckr-api.trvlr.ch/api/projects/`](https://trckr-api.trvlr.ch/api/projects/)
 
 Response:
 ```
@@ -74,7 +74,7 @@ Response:
 
 ### Create Project
 
-POST [https://trckr-api.trvlr.ch/api/projects/](https://trckr-api.trvlr.ch/api/projects/)
+POST [`https://trckr-api.trvlr.ch/api/projects/`](https://trckr-api.trvlr.ch/api/projects/)
 
 Request body:
 ```
@@ -88,7 +88,7 @@ The name is a charfield with a max length of 255 and required. Description is a 
 
 ### View Project
 
-GET [https://trckr-api.trvlr.ch/api/projects/<id>/](https://trckr-api.trvlr.ch/api/projects/1/)
+GET [`https://trckr-api.trvlr.ch/api/projects/<id>/`](https://trckr-api.trvlr.ch/api/projects/1/)
   
 Response:
 ```
@@ -103,7 +103,7 @@ Response:
 
 ### Update Project
 
-PUT [https://trckr-api.trvlr.ch/api/projects/<id>/](https://trckr-api.trvlr.ch/api/projects/1/)
+PUT [`https://trckr-api.trvlr.ch/api/projects/<id>/`](https://trckr-api.trvlr.ch/api/projects/1/)
 
 Request body:
 ```
@@ -115,21 +115,21 @@ Request body:
 
 ### Delete Project
 
-DELETE [https://trckr-api.trvlr.ch/api/projects/<id>/](https://trckr-api.trvlr.ch/api/projects/1/)
+DELETE [`https://trckr-api.trvlr.ch/api/projects/<id>/`](https://trckr-api.trvlr.ch/api/projects/1/)
 
 ### View Project Tasks
 
-GET [https://trckr-api.trvlr.ch/api/projects/<id>/tasks/](https://trckr-api.trvlr.ch/api/projects/1/tasks/)
+GET [`https://trckr-api.trvlr.ch/api/projects/<id>/tasks/`](https://trckr-api.trvlr.ch/api/projects/1/tasks/)
 
 ## Tasks
 
 ### Create Task
 
-POST [https://trckr-api.trvlr.ch/api/tasks/](https://trckr-api.trvlr.ch/api/tasks/)
+POST [`https://trckr-api.trvlr.ch/api/tasks/`](https://trckr-api.trvlr.ch/api/tasks/)
 
 ### Update Task
 
-PUT [https://trckr-api.trvlr.ch/api/tasks/<id>/](https://trckr-api.trvlr.ch/api/tasks/)
+PUT [`https://trckr-api.trvlr.ch/api/tasks/<id>/`](https://trckr-api.trvlr.ch/api/tasks/)
 
 
 
