@@ -164,6 +164,23 @@ HTTP 201 Created
     "project": 1
 }
 ```
+
+### View Task
+
+GET [`https://trckr-api.trvlr.ch/api/tasks/<id>`](https://trckr-api.trvlr.ch/api/tasks/1)
+
+Response:
+```
+HTTP 200 OK
+
+{
+    "id": 2,
+    "name": "second test task",
+    "description": "foo",
+    "project": 1
+}
+```
+
 ### Update Task
 
 PUT [`https://trckr-api.trvlr.ch/api/tasks/<id>/`](https://trckr-api.trvlr.ch/api/tasks/)
