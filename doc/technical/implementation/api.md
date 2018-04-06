@@ -1,6 +1,6 @@
 # API Endpoints
 
-Trckr relies on a well defined API to communicate between the backend and the frontend applications. This sections describes the current available api endpoints.
+Trckr relies on a well defined API to communicate between the backend and the frontend applications. This sections describes the current available API endpoints.
 
 ## User Management and Authentication
 
@@ -12,7 +12,7 @@ Trckr relies on a well defined API to communicate between the backend and the fr
 
 [`https://trckr.trvlr.ch/api/token-auth/`](https://trckr.trvlr.ch/api/token-auth/)
 
-When a user tries to login the frontend will send a json request with following attributes:
+When a user tries to login the frontend will send a JSON request with following attributes:
 ```
 {
   "username": <username>,
@@ -36,7 +36,7 @@ The token is then used to authenticate for every action the user wants to perfor
 
 #### Usage
 
-To use the token to authenticate other api calls, the token has to be put into the header: `Authorization: JWT <token>`. The current life time of a token is 365 days.
+To use the token to authenticate other API calls, the token has to be put into the header: `Authorization: JWT <token>`. The current life time of a token is 365 days.
 
 ### User logout
 
@@ -84,7 +84,7 @@ Request body:
 }
 ```
 
-The name is a charfield with a max length of 255 and required. Description is a textfield and optional.
+The name is a charfield with a max length of 255 and required. Description is a text field and optional.
 
 ### View Project
 

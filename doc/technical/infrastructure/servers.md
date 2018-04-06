@@ -4,7 +4,7 @@ Our servers are described in this part of the documentation.
 
 ## Application Server
 
-The application runs our server at nine.ch and can be found [here](https://trckr.trvlr.ch). Direct access to the server for deployments or configurations is accomplished through ssh with key based authentication. The TLS certificate is provided by Let's Encrypt and automated with the certbot.
+The application runs our server at nine.ch and can be found [here](https://trckr.trvlr.ch). Direct access to the server for deployments or configurations is accomplished through SSH with key based authentication. The TLS certificate is provided by Let's Encrypt and automated with the certbot.
 
 ## CI Server
 
