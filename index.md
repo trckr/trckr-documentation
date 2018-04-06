@@ -22,7 +22,6 @@ The documentation is divided into multiple chapters:
 * Implementation
   * [API](./doc/technical/implementation/api.md)
   * [Code](./doc/technical/implementation/code.md)
-  * [External Interfaces](./doc/technical/implementation/external_interfaces.md)
 * Infrastructure
   * [Servers](./doc/technical/infrastructure/servers.md)
   * [Deployment](./doc/technical/infrastructure/deployment.md)
