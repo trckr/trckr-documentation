@@ -196,7 +196,7 @@ Request body:
 
 ### View Task Time Entries
 
-GET [`https://trckr-api.trvlr.ch/api/tasks/<id>/time-entries`](https://trckr-api.trvlr.ch/api/task/1/time-entries/)
+GET [`https://trckr-api.trvlr.ch/api/tasks/<id>/time-entries`](https://trckr-api.trvlr.ch/api/tasks/1/time-entries)
 
 Response:
 ```
