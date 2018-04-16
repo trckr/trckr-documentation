@@ -194,4 +194,107 @@ Request body:
 }
 ```
 
+### View Task Time Entries
+
+GET [`https://trckr-api.trvlr.ch/api/tasks/<id>/time-entries`](https://trckr-api.trvlr.ch/api/task/1/time-entries/)
+
+Response:
+```
+HTTP 200 OK
+
+[
+    {
+        "id": 2,
+        "timeSpent" : 5.123
+        "description": "foo",
+        "task": 1
+    },
+    {
+        "id": 3,
+        "timeSpent" : 10
+        "description": "bar",
+        "task": 1
+    }
+]
+```
+
+## Time Entries
+
+### Create Time Entry
+
+POST [`https://trckr-api.trvlr.ch/api/time-entries/`](https://trckr-api.trvlr.ch/api/time-entries/)
+
+Request body:
+```
+{
+    "description": "foo",
+    "timeSpent" : 5.123,
+    "task": 1
+}
+```
+
+Response:
+```
+HTTP 201 Created
+
+{
+    "id": 2,
+    "description": "foo",
+    "timeSpent" : 5.123,
+    "task": 1
+}
+```
+
+### View Time Entry
+
+GET [`https://trckr-api.trvlr.ch/api/time-entries/<id>`](https://trckr-api.trvlr.ch/api/time-entries/1)
+
+Response:
+```
+HTTP 200 OK
+
+{
+    "id": 2,
+    "timeSpent" : 5.123
+    "description": "foo",
+    "task": 1
+}
+```
+
+### View All Time Entries For Current User
+
+GET [`https://trckr-api.trvlr.ch/api/time-entries`](https://trckr-api.trvlr.ch/api/time-entries)
+
+Response:
+```
+HTTP 200 OK
+
+[
+    {
+        "id": 2,
+        "timeSpent" : 5.123
+        "description": "foo",
+        "task": 1
+    },
+    {
+        "id": 3,
+        "timeSpent" : 10
+        "description": "bar",
+        "task": 1
+    }
+]
+```
+
+### Update Time Entry
+
+PUT [`https://trckr-api.trvlr.ch/api/time-entries/<id>/`](https://trckr-api.trvlr.ch/api/time-entries/)
+
+Request body:
+```
+{
+    "description": "bar",
+    "timeSpent" : 10,
+    "task": 1
+}
+```
 
