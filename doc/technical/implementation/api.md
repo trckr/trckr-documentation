@@ -36,15 +36,13 @@ The token is then used to authenticate for every action the user wants to perfor
 
 #### Usage
 
-To use the token to authenticate other API calls, the token has to be put into the header: `Authorization: JWT <token>`. The current life time of a token is 365 days.
+To use the token to authenticate other API calls, the token has to be put into the header: `Authorization: Token <token>`. The current life time of a token is 365 days.
 
-### User logout
+### Token Invaldiation
 
-tbd
+POST [`https://trckr-api.trvlr.ch/api/tokens/invaldiate/`](https://trckr-api.trvlr.ch/api/tokens/invaldiate/)
 
-### Token Revocation
-
-tbd
+This action will delete the token used in the authorization header with this request. A post body is not required.
 
 ## Projects
 
