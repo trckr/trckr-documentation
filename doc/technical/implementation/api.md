@@ -40,7 +40,7 @@ To use the token to authenticate other API calls, the token has to be put into t
 
 ### Token Invaldiation
 
-POST [`https://trckr-api.trvlr.ch/api/tokens/invaldiate/`](https://trckr-api.trvlr.ch/api/tokens/invaldiate/)
+POST [`https://trckr-api.trvlr.ch/api/tokens/invalidate/`](https://trckr-api.trvlr.ch/api/tokens/invalidate/)
 
 This action will delete the token used in the authorization header with this request. A post body is not required.
 
