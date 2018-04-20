@@ -7,7 +7,7 @@ Trckr relies on a well defined API to communicate between the backend and the fr
 * [Authentication](#authentication)
    * [Session Authentication](#session-authentication)
    * [Token Authentication](#token-authentication)
-   * [Token Invalidation](#token-invaldiation)
+   * [Token Invalidation](#token-invalidation)
 * [User](#user)
    * [Create User](#create-user)
 * [Projects](#projects)
@@ -64,7 +64,7 @@ The token is then used to authenticate for every action the user wants to perfor
 
 To use the token to authenticate other API calls, the token has to be put into the header: `Authorization: Token <token>`. The current life time of a token is 365 days.
 
-### Token Invaldiation
+### Token Invalidation
 
 POST [`https://trckr-api.trvlr.ch/api/tokens/invalidate/`](https://trckr-api.trvlr.ch/api/tokens/invalidate/)
 
@@ -74,7 +74,7 @@ This action will delete the token used in the authorization header with this req
 
 ### Create User
 
-POST
+POST [`https://trckr-api.trvlr.ch/api/user/`](https://trckr-api.trvlr.ch/api/user/)
 
 Request body:
 ```
@@ -98,6 +98,14 @@ Response:
     "token": "450c24407787bba7e14b9386029789c14fa200a0"
 }
 ```
+
+#### Fields
+
+* __username__: string, max_length=255, required
+* __email__: email, max_length=255, optional
+* __password__: string, min_length=8, use digits and letters, required
+* __first_name__: string, max_length=255, optional
+* __last_name__: string, max_length=255, optional
 
 ## Projects
 
@@ -137,7 +145,10 @@ Request body:
 }
 ```
 
-The name is a charfield with a max length of 255 and required. Description is a text field and optional.
+#### Fields
+
+* __name__: string, max_length=255, required
+* __description__: string, max_length=1024, optional    
 
 ### View Project
 
@@ -165,6 +176,11 @@ Request body:
     "description": "foo",
 }
 ```
+
+#### Fields
+
+* __name__: string, max_length=255, required
+* __description__: string, max_length=1024, optional    
 
 ### Delete Project
 
@@ -218,6 +234,12 @@ HTTP 201 Created
 }
 ```
 
+#### Fields
+
+* __name__: string, max_length=255, required
+* __description__: string, max_length=1024, optional
+* __project__: int, id of existing project, required
+
 ### View Task
 
 GET [`https://trckr-api.trvlr.ch/api/tasks/<id>`](https://trckr-api.trvlr.ch/api/tasks/1)
@@ -246,6 +268,12 @@ Request body:
     "project": 1
 }
 ```
+
+#### Fields
+
+* __name__: string, max_length=255, required
+* __description__: string, max_length=1024, optional
+* __project__: int, id of existing project, required
 
 ### View Task Time Entries
 
@@ -285,6 +313,12 @@ Request body:
     "task": 1
 }
 ```
+
+#### Fields
+
+* __description__: string, max_length=1024, optional
+* __timeSpent__: decimal, max_digits=10, decimal_places=5, min_value=0.01, required
+* __task__: int, id of existing task, required
 
 Response:
 ```
@@ -350,4 +384,10 @@ Request body:
     "task": 1
 }
 ```
+
+#### Fields
+
+* __description__: string, max_length=1024, optional
+* __timeSpent__: decimal, max_digits=10, decimal_places=5, min_value=0.01, required
+* __task__: int, id of existing task, required
 
