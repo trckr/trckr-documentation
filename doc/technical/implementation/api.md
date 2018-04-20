@@ -2,7 +2,33 @@
 
 Trckr relies on a well defined API to communicate between the backend and the frontend applications. This sections describes the current available API endpoints.
 
-## User Management and Authentication
+## Overview
+
+* [Authentication](#authentication)
+   * [Session Authentication](#session-authentication)
+   * [Token Authentication](#token-authentication)
+   * [Token Invalidation](#token-invaldiation)
+* [User](#user)
+   * [Create User](#create-user)
+* [Projects](#projects)
+   * [List Projects](#list-projects)
+   * [Create Project](#create-project)
+   * [View Project](#view-project)
+   * [Update Project](#update-project)
+   * [Delete Project](#delete-project)
+   * [View Project Tasks](#view-project-tasks)
+* [Tasks](#tasks)
+   * [Create Task](#create-task)
+   * [View Task](#view-task)
+   * [Update Task](#update-task)
+   * [View Task Time Entries](#view-task-time-entries)
+* [Time Entries](#time-entries)
+   * [Create Time Entry](#create-time-entry)
+   * [View Time Entry](#view-time-entry)
+   * [View Time Entries for Current User](#view-all-time-entries-for-current-user)
+   * [Update Time Entry](#update-time-entry)
+   
+## Authentication
 
 ### Session Authentication
 
@@ -43,6 +69,35 @@ To use the token to authenticate other API calls, the token has to be put into t
 POST [`https://trckr-api.trvlr.ch/api/tokens/invalidate/`](https://trckr-api.trvlr.ch/api/tokens/invalidate/)
 
 This action will delete the token used in the authorization header with this request. A post body is not required.
+
+## User
+
+### Create User
+
+POST
+
+Request body:
+```
+{
+    "username" : "testuser",
+    "email" : "test@example.com",
+    "password" : "testpassword",
+    "first_name" : "Max",
+    "last_name" : "Muster"
+}
+```
+
+Response:
+```
+{
+    "id": 8,
+    "username": "testuser",
+    "email": "test@example.com",
+    "first_name": "Max",
+    "last_name": "Muster",
+    "token": "450c24407787bba7e14b9386029789c14fa200a0"
+}
+```
 
 ## Projects
 
