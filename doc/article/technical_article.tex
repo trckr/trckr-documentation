@@ -3,35 +3,45 @@
     \usepackage[margin=0.7in]{geometry}
     \usepackage[parfill]{parskip}
     \usepackage[utf8]{inputenc}
+    \usepackage[headsepline,footsepline]{scrpage2}
+    
+
+% Header and Footer Formatting-----------------------------------------------------------------------
+%   Formatting of Header and Footer
+% ---------------------------------------------------------------------------------------------------
+\pagestyle{scrheadings}
+\clearscrheadfoot
+\ohead{\headmark}
+\ofoot{\pagemark}
 
 % Title Page Information-----------------------------------------------------------------------------
 %   These are the informations printed on the title page of the article
 % ---------------------------------------------------------------------------------------------------
 
-    \title{Project trckr}
-    \subtitle{Technical Article}
-    \date{May \\ 2018}
-    \author{
-    Ankeshian, Gabriel\\
-    \texttt{ankesgab@students.zhaw.ch}
-    \and
-    Balidis, Dimitri\\
-    \texttt{baliddim@students.zhaw.ch}
-    \and
-    Christen, Luca\\
-    \texttt{chrisluc@students.zhaw.ch}
-    \and
-    Jossi, Savino\\
-    \texttt{jossisav@students.zhaw.ch}
-    \and
-    Milenkovic, Daniel\\
-    \texttt{milendan@students.zhaw.ch}
-    \and
-    Nominato, Angelica Helena Moreira Alves\\
-    \texttt{moreiane@students.zhaw.ch}
-    \and
-    Pacassi, David\\
-    \texttt{pacasdav@students.zhaw.ch}}
+\title{Project trckr}
+\subtitle{Technical Article}
+\date{May \\ 2018}
+\author{
+Ankeshian, Gabriel\\
+\texttt{ankesgab@students.zhaw.ch}
+\and
+Balidis, Dimitri\\
+\texttt{baliddim@students.zhaw.ch}
+\and
+Christen, Luca\\
+\texttt{chrisluc@students.zhaw.ch}
+\and
+Jossi, Savino\\
+\texttt{jossisav@students.zhaw.ch}
+\and
+Milenkovic, Daniel\\
+\texttt{milendan@students.zhaw.ch}
+\and
+Nominato, Angelica Helena Moreira Alves\\
+\texttt{moreiane@students.zhaw.ch}
+\and
+Pacassi, David\\
+\texttt{pacasdav@students.zhaw.ch}}
 
 \begin{document}
 \maketitle
@@ -41,8 +51,14 @@
 %   This is the abstract of the technical article
 % -------------------------------------------------------------------------------------
 \begin{abstract}
-    Abstract
+The main goal of the present article is to describe the idea, goals and main functionalities of the web based app trckr. The app is being used
+to track the time on single tasks of projects assigned to a person.\\
+The app consists of a back- and frontend. The backend is written in Python with the help of the framework Django, the frontend with the Javascript
+framework Vue.js.
+
 \end{abstract}
+
+\pagebreak
 
 % Table of Contents-----------------------------------------------------------------------------
 %   This is the table of contents
@@ -50,11 +66,34 @@
 
 \tableofcontents
 
+\pagebreak
+
 % Introduction-----------------------------------------------------------------------------
 %   These are the informations printed on the title page of the article
 % ------------------------------------------------------------------------------------------
 \section{Introduction}
 Introduction...
+
+\subsection{Initial Situation and Objectives}
+
+\subsubsection{Initial Situation}
+
+\subsubsection{Objectives}
+
+\subsection{Main Features}
+
+\subsection{Technolgies}
+
+
+\subsubsection{Django}
+
+
+\subsubsection{PostgreSQL}
+
+
+\subsubsection{Vue.js}
+
+
 
 % Results-----------------------------------------------------------------------------
 %   These are the informations printed on the title page of the article

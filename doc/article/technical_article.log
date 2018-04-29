@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.29)  29 APR 2018 15:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.29)  29 APR 2018 16:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -150,21 +150,32 @@ Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
 )
-(./technical_article.aux)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/koma-script/scrpage2.sty
+Package: scrpage2 2018/03/30 v3.25 KOMA-Script package (page head and foot)
+
+
+Package scrpage2 Warning: usage of obsolete package!
+(scrpage2)                Package `scrpage2' is obsolete.
+(scrpage2)                You should not longer use package `scrpage2'.
+(scrpage2)                You should replace usage of package `scrpage2'
+(scrpage2)                by `scrlayer-scrpage' on input line 52.
+
+LaTeX Info: Redefining \pagemark on input line 180.
+) (./technical_article.aux)
 \openout1 = `technical_article.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -201,35 +212,39 @@ LaTeX Font Info:    ... okay on input line 36.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <17.28> on input line 38.
+(Font)              <17.28> on input line 48.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 38.
+(Font)              <12> on input line 48.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 49.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 49.
 [1
 
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./technical_article.toc)
+[2] (./technical_article.toc)
 \tf@toc=\write3
 \openout3 = `technical_article.toc'.
 
- [2] (./technical_article.aux) ) 
+ [3] [4] (./technical_article.aux) ) 
 Here is how much of TeX's memory you used:
- 2768 strings out of 492649
- 52654 string characters out of 6129622
- 215642 words of memory out of 5000000
- 6686 multiletter control sequences out of 15000+600000
- 7119 words of font info for 26 fonts, out of 8000000 for 9000
+ 3031 strings out of 492649
+ 56379 string characters out of 6129622
+ 223079 words of memory out of 5000000
+ 6938 multiletter control sequences out of 15000+600000
+ 9294 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,6n,51p,9221b,250s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmtt12.pfb>
-Output written on technical_article.pdf (2 pages, 45513 bytes).
+ 42i,9n,51p,9221b,250s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2018/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmtt12.pfb>
+Output written on technical_article.pdf (4 pages, 51621 bytes).
 PDF statistics:
- 27 PDF objects out of 1000 (max. 8388607)
- 18 compressed objects within 1 object stream
+ 33 PDF objects out of 1000 (max. 8388607)
+ 22 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
