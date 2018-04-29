@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1525006790 "/Users/dimitribalidis/Documents/zhaw/Semester_6/PSIT4/trckr-documentation/doc/article/technical_article.tex" "technical_article.pdf" "technical_article" 1525006790
-  "/Users/dimitribalidis/Documents/zhaw/Semester_6/PSIT4/trckr-documentation/doc/article/technical_article.tex" 1525006789 2830 ea93b65528387c4d7443c0dc6e57e065 ""
+["pdflatex"] 1525007254 "/Users/dimitribalidis/Documents/zhaw/Semester_6/PSIT4/trckr-documentation/doc/article/technical_article.tex" "technical_article.pdf" "technical_article" 1525007255
+  "/Users/dimitribalidis/Documents/zhaw/Semester_6/PSIT4/trckr-documentation/doc/article/technical_article.tex" 1525007254 3097 425ad4a5aaf8dfcf581eec6bf7939dfb ""
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1480098701 1524 4414a8315f39513458b80dfc63bff03a ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1480098701 1288 655e228510b4c2a1abe905c368440826 ""
@@ -31,11 +31,11 @@
   "/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1523934492 2717033 f61a5287d9c22a39a74f1979fe3f905c ""
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1525003289 4220280 24e7d40a89ad6c4787792b1449988f55 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
-  "technical_article.aux" 1525006790 390 d8a5919dd93201d9c991fd59ac075812 ""
-  "technical_article.tex" 1525006789 2830 ea93b65528387c4d7443c0dc6e57e065 ""
-  "technical_article.toc" 1525006790 212 0674e17047949637856634cedc6f4d80 ""
+  "technical_article.aux" 1525007255 464 4144d1c85a8ff5fed7be4baf8e3704db ""
+  "technical_article.tex" 1525007254 3097 425ad4a5aaf8dfcf581eec6bf7939dfb ""
+  "technical_article.toc" 1525007255 268 4306b2d42957b95b16093a45fd0b0fcf ""
   (generated)
-  "technical_article.aux"
   "technical_article.log"
   "technical_article.pdf"
+  "technical_article.aux"
   "technical_article.toc"
