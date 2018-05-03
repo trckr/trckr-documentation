@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1525379891 "/Users/dimitribalidis/Documents/zhaw/Semester_6/PSIT4/trckr-documentation/doc/article/technical_article.tex" "technical_article.pdf" "technical_article" 1525379892
-  "/Users/dimitribalidis/Documents/zhaw/Semester_6/PSIT4/trckr-documentation/doc/article/technical_article.tex" 1525379890 5346 1b3004c81b87a4990bc1ab8bee00ed7b ""
+["pdflatex"] 1525381916 "/Users/dimitribalidis/Documents/zhaw/Semester_6/PSIT4/trckr-documentation/doc/article/technical_article.tex" "technical_article.pdf" "technical_article" 1525381916
+  "/Users/dimitribalidis/Documents/zhaw/Semester_6/PSIT4/trckr-documentation/doc/article/technical_article.tex" 1525381915 5853 f4625c2985fa83d7c591230fcdc3ad5a ""
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1480098701 1524 4414a8315f39513458b80dfc63bff03a ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1480098701 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -42,11 +42,11 @@
   "/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1523934492 2717033 f61a5287d9c22a39a74f1979fe3f905c ""
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1525003289 4220280 24e7d40a89ad6c4787792b1449988f55 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
-  "technical_article.aux" 1525379892 1134 7439861ea7deb507902b0b73fbb4c9f3 ""
-  "technical_article.tex" 1525379890 5346 1b3004c81b87a4990bc1ab8bee00ed7b ""
-  "technical_article.toc" 1525379892 729 daee0be62f998873aae499c7c6fb012d ""
+  "technical_article.aux" 1525381916 1134 7439861ea7deb507902b0b73fbb4c9f3 ""
+  "technical_article.tex" 1525381915 5853 f4625c2985fa83d7c591230fcdc3ad5a ""
+  "technical_article.toc" 1525381916 729 daee0be62f998873aae499c7c6fb012d ""
   (generated)
-  "technical_article.pdf"
-  "technical_article.log"
   "technical_article.toc"
   "technical_article.aux"
+  "technical_article.pdf"
+  "technical_article.log"
