@@ -36,6 +36,8 @@ INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/koma-script/scrpage2.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/koma-script/scrpage2.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT technical_article.aux
 INPUT technical_article.aux
 OUTPUT technical_article.aux
@@ -62,8 +64,11 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT technical_article.toc
 INPUT technical_article.toc
 OUTPUT technical_article.toc
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 INPUT technical_article.aux
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb

@@ -4,6 +4,7 @@
     \usepackage[parfill]{parskip}
     \usepackage[utf8]{inputenc}
     \usepackage[headsepline,footsepline]{scrpage2}
+    \usepackage[onehalfspacing]{setspace}
     
 
 % Header and Footer Formatting-----------------------------------------------------------------------
@@ -51,9 +52,9 @@ Pacassi, David\\
 %   This is the abstract of the technical article
 % -------------------------------------------------------------------------------------
 \begin{abstract}
-The main goal of the present article is to describe the idea, goals and main functionalities of the web based app trckr. The app is being used
-to track the time on single tasks of projects assigned to a person.\\
-The app consists of a back- and frontend. The backend is written in Python with the help of the framework Django, the frontend with the Javascript
+The main goal of the present article is to describe the idea, goals and main functionalities of the web based app trckr. Trckr is for everyone,
+who works on a project and wants a very simple web tool with intiutive handling.\\
+The app consists of a backend and frontend. The backend is written in Python with the help of the framework Django, the frontend with the Javascript
 framework Vue.js.
 
 \end{abstract}
@@ -72,26 +73,38 @@ framework Vue.js.
 %   These are the informations printed on the title page of the article
 % ------------------------------------------------------------------------------------------
 \section{Introduction}
-Introduction...
+Time tracking has always been a really important thing in daily tasks and projects, and so tools and methods for time tracking have evolved.
+There are dozens of methods, that are teached in project management and self improvement classes. Some of them are overkills and some of them are
+very useful, depending on a person, task and project.
 
-\subsection{Initial Situation and Objectives}
-
-\subsubsection{Initial Situation}
-
-\subsubsection{Objectives}
+\subsection{Objectives}
+The goal with project trckr is to develop and distribute a time tracking webapp, that is very easy to understand and use. It is very important to
+have a very small amount of steps for a user to track his time on single tasks.
 
 \subsection{Main Features}
+The user is able to:
+\begin{itemize}
+    \item register and login to trckr
+    \item create and edit projects
+    \item create, track and edit tasks
+    \item visit trckr also on a mobile browser
+\end{itemize}
 
-\subsection{Technolgies}
+
+\section{Technolgies}
 
 
-\subsubsection{Django}
+\subsection{Django}
+Django is an open source web framework written in Python. It is very useful for fast, clean and simple development of web applications.\\
+One of the main advantages is its fast setup, therefore you can start developing your application very quick.
+Django comes with support of various database integrations.
 
+\subsection{PostgreSQL}
+Trckr runs with a PostgreSQL database in the backend.
 
-\subsubsection{PostgreSQL}
-
-
-\subsubsection{Vue.js}
+\subsection{Vue.js}
+Vue is a progressive framework for building user interfaces. Trckr is developed with vue.js because of it's
+very easy to learn modules. Also it'ts very handy when it comes to developing user interfaces.
 
 
 
@@ -100,6 +113,11 @@ Introduction...
 % -------------------------------------------------------------------------------------------
 \section{Results}
 Results...
+
+\subsection{APIs}
+
+
+\subsection{User Interface}
 
 % Outlook-----------------------------------------------------------------------------
 %   These are the informations printed on the title page of the article
