@@ -6,6 +6,8 @@
     %\usepackage[headsepline,footsepline]{scrpage2}
     \usepackage[onehalfspacing]{setspace}
     \usepackage{times}
+    \usepackage{graphicx}
+    \graphicspath{ {images/} }
     
 
 % Header and Footer Formatting-----------------------------------------------------------------------
@@ -22,7 +24,7 @@
 
 \title{Project trckr}
 \subtitle{Technical Article}
-\date{May \\ 2018}
+\date{May 2018}
 \author{
 Ankeshian, Gabriel\\
 \texttt{ankesgab@students.zhaw.ch}
@@ -119,7 +121,14 @@ It allows to create data structures that can easily be displayed in the HTML of 
 %   These are the informations printed on the title page of the article
 % -------------------------------------------------------------------------------------------
 \section{Results}
-Results...
+As you can see in the figure \ref{fig:architecture}, we have built a pretty simple architecture,
+including Django with PostgreSQL in the backend and a frontend based on Node.
+ 
+\begin{figure}[h]
+    \includegraphics[width=8cm]{architecture}
+    \caption{Architecture of trckr}
+    \label{fig:architecture}
+\end{figure}
 
 \subsection{APIs}
 
@@ -143,4 +152,7 @@ Conclusion...
 % -------------------------------------------------------------------------------------------
 \section{Bibliography}
 Bibliography...
+
+\listoffigures
+
 \end{document}
