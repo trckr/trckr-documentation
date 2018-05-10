@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1525957937 "/Users/dimitribalidis/Documents/zhaw/Semester_6/PSIT4/trckr-documentation/doc/article/technical_article.tex" "technical_article.pdf" "technical_article" 1525957937
-  "/Users/dimitribalidis/Documents/zhaw/Semester_6/PSIT4/trckr-documentation/doc/article/technical_article.tex" 1525957936 6905 111217dc2f9406a24965e6f5e3b8b842 ""
+["pdflatex"] 1525959700 "/Users/dimitribalidis/Documents/zhaw/Semester_6/PSIT4/trckr-documentation/doc/article/technical_article.tex" "technical_article.pdf" "technical_article" 1525959701
+  "/Users/dimitribalidis/Documents/zhaw/Semester_6/PSIT4/trckr-documentation/doc/article/technical_article.tex" 1525959699 7098 d12f4572df30d4569faa701da076def5 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1480098688 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -65,13 +65,13 @@
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1525003289 4220280 24e7d40a89ad6c4787792b1449988f55 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
   "images/architecture.png" 1525955750 19467 89199b1ba7776dd346bf23bf1ed08803 ""
-  "technical_article.aux" 1525957937 1329 89d0713f0ac107e9b49389258dfeb881 ""
-  "technical_article.lof" 1525957937 80 93e2e208efa4f6cd8635287a6ef3f7a8 ""
-  "technical_article.tex" 1525957936 6905 111217dc2f9406a24965e6f5e3b8b842 ""
-  "technical_article.toc" 1525957937 729 1bbc1f3ddd0148a389c693f5cce4419d ""
+  "technical_article.aux" 1525959701 1329 28b5c1858bf141d93028bcc6eb57fcf4 ""
+  "technical_article.lof" 1525959701 80 93e2e208efa4f6cd8635287a6ef3f7a8 ""
+  "technical_article.tex" 1525959699 7098 d12f4572df30d4569faa701da076def5 ""
+  "technical_article.toc" 1525959701 729 86421096212d94693e953b168969f07f ""
   (generated)
-  "technical_article.log"
-  "technical_article.aux"
-  "technical_article.toc"
   "technical_article.lof"
+  "technical_article.log"
+  "technical_article.toc"
+  "technical_article.aux"
   "technical_article.pdf"
