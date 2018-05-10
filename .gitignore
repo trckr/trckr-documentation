@@ -1,4 +1,6 @@
 # Latex
+*.fdb_latexmk
+*.fls
 *.aux
 *.glo
 *.idx
