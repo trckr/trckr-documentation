@@ -309,6 +309,7 @@ Request body:
 ```
 {
     "description": "foo",
+    "startTime": "2018-05-10 12:00:00",
     "timeSpent" : 5.123,
     "task": 1
 }
@@ -317,6 +318,7 @@ Request body:
 #### Fields
 
 * __description__: string, max_length=1024, optional
+* __startTime__: A date time string in the format YYYY-MM-DD hh:mm[:ss], required
 * __timeSpent__: decimal, max_digits=10, decimal_places=5, min_value=0.01, required
 * __task__: int, id of existing task, required
 
@@ -327,6 +329,7 @@ HTTP 201 Created
 {
     "id": 2,
     "description": "foo",
+    "startTime": "2018-05-10T12:00:00",
     "timeSpent" : 5.123,
     "task": 1
 }
@@ -343,6 +346,7 @@ HTTP 200 OK
 {
     "id": 2,
     "timeSpent" : 5.123
+    "startTime": "2018-05-10T12:00:00",
     "description": "foo",
     "task": 1
 }
@@ -360,12 +364,14 @@ HTTP 200 OK
     {
         "id": 2,
         "timeSpent" : 5.123
+        "startTime": "2018-05-10T12:00:00",
         "description": "foo",
         "task": 1
     },
     {
         "id": 3,
         "timeSpent" : 10
+        "startTime": "2018-05-10T12:00:00",
         "description": "bar",
         "task": 1
     }
@@ -380,6 +386,7 @@ Request body:
 ```
 {
     "description": "bar",
+    "startTime": "2018-05-10 12:00:00",
     "timeSpent" : 10,
     "task": 1
 }
@@ -388,6 +395,7 @@ Request body:
 #### Fields
 
 * __description__: string, max_length=1024, optional
+* __startTime__: A date time string in the format YYYY-MM-DD hh:mm[:ss], required
 * __timeSpent__: decimal, max_digits=10, decimal_places=5, min_value=0.01, required
 * __task__: int, id of existing task, required
 
