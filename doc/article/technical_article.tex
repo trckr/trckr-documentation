@@ -8,7 +8,7 @@
     \usepackage{times}
     \usepackage{graphicx}
     \graphicspath{ {images/} }
-    
+
 
 % Header and Footer Formatting-----------------------------------------------------------------------
 %   Formatting of Header and Footer
@@ -61,9 +61,9 @@ To have an easy development, the backend is written in Python with the help of t
 framework Vue.js. Users are able to create and edit projects after a successful registration. Time tracking starts with single tasks
 a user creates.\\
 In order to compete with other tools and web services, trckr has big advantages in performance and usability. To extend the reach of trckr, more
-functions are planned to display projects and tasks in a userfriendly manner. These plannded features will give trckr a great advantage towards ever 
-increasing complexity in project managment and task tracking, this would be especially useful for larger companies. Additionally we provide trckr
-as an open source solution and everybody can contribute features that could be useful for the greater userbase.
+functions are planned to display projects and tasks in a user-friendly manner. These planned features will give trckr a great advantage towards ever
+increasing complexity in project management and task tracking, this would be especially useful for larger companies. Additionally we provide trckr
+as an open source solution and everybody can contribute features that could be useful for the greater user base.
 
 \end{abstract}
 
@@ -78,7 +78,7 @@ as an open source solution and everybody can contribute features that could be u
 \pagebreak
 
 % Introduction-----------------------------------------------------------------------------
-%   These are the informations printed on the title page of the article
+%   This is the information printed on the title page of the article
 % ------------------------------------------------------------------------------------------
 \section{Introduction}
 Time tracking is an important process for daily business to have insight on the productivity of a team, this lead to ever improving processes and tools
@@ -110,22 +110,22 @@ One of the main advantages is its fast setup, therefore you can start developing
 Django comes with support of various database integrations.
 
 \subsection{PostgreSQL}
-Trckr runs with a PostgreSQL database in the backend. PostgreSQL is fully supported by Django and 
+Trckr runs with a PostgreSQL database in the backend. PostgreSQL is fully supported by Django and
 implemented from the beginning. With Django in use, not much has to be configured for the database, because
-the whole databse is written by Django.
+the whole database is written by Django.
 
 \subsection{Vue.js}
-Vue.js is a progressive framework for building user interfaces. Trckr is developed with Vue.js mainly for its simplicity and the rather shallow learning curve it provides to unexpirienced developers. 
-The features that Vue.js provides, allow the creation of data structures that can easily be displayed in the HTML of a page. This and the ability to easily make calls to the backend makes it a perfect allround framework for trckr.
+Vue.js is a progressive framework for building user interfaces.\cite{vuejs} Trckr is developed with Vue.js mainly for its simplicity and the rather shallow learning curve it provides to unexperienced developers.
+The features that Vue.js provides, allow the creation of data structures that can easily be displayed in the HTML of a page. This and the ability to easily make calls to the backend makes it a perfect all-round framework for trckr.
 
 
 % Results-----------------------------------------------------------------------------
-%   These are the informations printed on the title page of the article
+%   This is the information printed on the title page of the article
 % -------------------------------------------------------------------------------------------
 \section{Results}
 As you can see in the figure \ref{fig:architecture}, we have built a pretty simple architecture,
 including Django with PostgreSQL in the backend and a frontend based on Node.
- 
+
 \begin{figure}[h]
     \includegraphics[width=8cm]{architecture}
     \caption{Architecture of trckr}
@@ -133,11 +133,72 @@ including Django with PostgreSQL in the backend and a frontend based on Node.
 \end{figure}
 
 \subsection{APIs}
-
+TODO
 
 \subsection{User Interface}
 
-% Outlook-----------------------------------------------------------------------------
+\begin{figure}[h]
+    \includegraphics[width=\textwidth]{trckr-login}
+    \caption{The trckr login page.}
+    \label{fig:trckr-login}
+
+    \includegraphics[width=\textwidth]{trckr-register}
+    \caption{The trckr registration page.}
+    \label{fig:trckr-register}
+\end{figure}
+
+The first thing one sees when visiting trckr, is that there is a login page.
+For people that are not yet registered there is the option to register through a
+"Register" link. Filling out the registration form will trigger a call to the
+backend to create a user. The response to this call will contain an authentication
+token, this allows the user to be logged in directly after registering.
+Similarly, when submitting the login form the backend will reply with an
+authentication token that allows an existing user to be logged in.\\
+At the moment of registration the navigation bar on the top of the interface
+will contain a link to the dashboard, the projects page, the time entries page
+as well as a logout button.\\
+The dashboard displays graphs...TODO \\
+
+\begin{figure}[h]
+    \includegraphics[width=\textwidth]{trckr-projects-table}
+    \caption{The projects page.}
+    \label{fig:trckr-projects-table}
+\end{figure}
+
+On the projects page one can see a table of all the projects that the currently
+logged in user is a part of. The table is automatically generated by Vue.js and
+it contains a row for each project. Above the projects table there is a
+textfield that allows a user to filter for a project or a group of projects that
+contain the given substring. To create a new project a user will have to
+navigate to the projects page and click on the "Create project" link which will
+open the project creation form. In this form a user can specify a name for the
+project as well as an optional description.\\
+Each project can be viewed in more detail when the project inside the table is
+clicked. As the figure below is showing, the project page will contain the name,
+the description and a table of all the tasks in the current project.
+
+\begin{figure}[h]
+    \includegraphics[width=\textwidth]{trckr-project-page}
+    \caption{The projects page with the table of all projects.}
+    \label{fig:trckr-project-page}
+\end{figure}
+
+Clicking on a task will display the details of said task, at the current state
+that is only the name and the description of the task.\\
+On the "Time Entries" page a user can create a time entry for a specific task of
+a project. There is a link on the page that leads to the time entry form. In
+said form the user has to chose a project first and then a task of the project
+for which the time entry should be created.
+
+\begin{figure}[h]
+    \includegraphics[width=\textwidth]{trckr-project-page}
+    \caption{The form to add a time entry to a task.}
+    \label{fig:trckr-create-time-entry}
+\end{figure}
+
+All time entries will be displayed on the time entry page.
+
+% Outlook----------------------------------------------------------------------------
 %   These are the informations printed on the title page of the article
 % -------------------------------------------------------------------------------------------
 \section{Outlook}
@@ -154,6 +215,13 @@ Conclusion...
 % -------------------------------------------------------------------------------------------
 \section{Bibliography}
 Bibliography...
+\begin{thebibliography}{9}
+
+    \bibitem{vuejs}
+    https://vuejs.org/ ; as 10.05.2018
+
+
+\end{thebibliography}
 
 \listoffigures
 
