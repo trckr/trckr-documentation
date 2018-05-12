@@ -25,6 +25,7 @@
 \title{Project trckr}
 \subtitle{Technical Article}
 \date{May 2018}
+% TODO: authors more compact? 
 \author{
 Ankeshian, Gabriel\\
 \texttt{ankesgab@students.zhaw.ch}
@@ -51,45 +52,69 @@ Pacassi, David\\
 \maketitle
 \pagebreak
 
-% Abstract-----------------------------------------------------------------------------
-%   This is the abstract of the technical article
-% -------------------------------------------------------------------------------------
-\begin{abstract}
-The main goal of the present article is to describe the idea, goals and main functionalities of the web based app trckr. Trckr is for everyone,
-who works on a project and wants an intuitive and simple web tool with easy to learn handling.\\
-To have an easy development, the backend is written in Python with the help of the framework Django, the frontend with the Javascript
-framework Vue.js. Users are able to create and edit projects after a successful registration. Time tracking starts with single tasks
-a user creates.\\
-In order to compete with other tools and web services, trckr has big advantages in performance and usability. To extend the reach of trckr, more
-functions are planned to display projects and tasks in a user-friendly manner. These planned features will give trckr a great advantage towards ever
-increasing complexity in project management and task tracking, this would be especially useful for larger companies. Additionally we provide trckr
-as an open source solution and everybody can contribute features that could be useful for the greater user base.
+% Proofreading Checklist
+% * avoid passive voice
+% * succinct sentences
+% * use active voice
+% * did I say don't use passive voice?
 
+% Abstract----------------------------------------------------------------------
+%   This is the abstract of the technical article
+% ------------------------------------------------------------------------------
+\begin{abstract}
+  The main goal of the present article is to describe the idea, goals and main
+  functionalities of the web based application trckr. We developed trckr for
+  % Since we want trckr to be all lowercase, we avoid using it at the start of
+  % the sentence
+  everyone who works on a project and needs an intuitive and simple web tool to
+  accurately track their time spent on different tasks.
+  % Hint: Empty line makes a paragraph which is semantically different from the
+  % forced \\ newline (and much neater)
+
+  The backend is written in Python with the help of the web application
+  framework Django and the frontend with the Javascript UI framework Vue.js.
+  Both technologies were new to most team members, but have proven themselves
+  effective and learning them were ultimately a benefit the outcome of the
+  project.
+
+  In order to compete with similar tools and web services, trckr focuses on
+  performance and usability. To distinguish trckr from the competition, many
+  features are planned to manage projects and tasks in a user-friendly manner.
+  This will allow the user to leverage trckr to handle the ever increasing
+  complexity in project management and task tracking found in large companies.
+  Despite being targeted at large companies, trckr will remain open source and
+  anybody can contribute, covering cases we might have never dreamed of.
 \end{abstract}
 
-\pagebreak
+\clearpage
 
-% Table of Contents-----------------------------------------------------------------------------
+% Table of Contents-------------------------------------------------------------
 %   This is the table of contents
-% -------------------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------
 
 \tableofcontents
 
-\pagebreak
+\clearpage
 
-% Introduction-----------------------------------------------------------------------------
+% Introduction------------------------------------------------------------------
 %   This is the information printed on the title page of the article
-% ------------------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------
 \section{Introduction}
-Time tracking is an important process for daily business to have insight on the productivity of a team, this lead to ever improving processes and tools
-that allow for easier time tracking, no matter which branch. This also lead to multiple methods and tools being developed and enhanced in parallel,
-many methods are not very helpful for a certain branch because they might give enough insight or have too many features that are not going to be used.
-Yet these methods might be good for another branch, this tells us, that diversity is in no way an issue and tools and methods are adapting to teams,
-and not the other way around.
+Time and task tracking are important activities in many businesses to gain
+insights on the productivity of a team, requiring appropriate tools allowing
+easier and more accurate time tracking. Many processes and methods have been
+developed in the past to cover this need. Unfortunately most of them address
+just a certain need or have been fine tuned to a specific company or team. This
+necessarily leads to a loss of experience that could have been leveraged by
+other teams but is also not generic enough to adapt to different processes,
+causing other companies to inappropriately adapt to the tool instead of the tool
+adapting to the company.
 
 \subsection{Objectives}
-The goal with project trckr is to develop and distribute a time tracking webapp, that is very easy to understand and use. It is highly important to
-have the least amount of steps possible, for a user to track his time on single tasks.
+The goal with trckr is to develop and distribute a time tracking web application
+that is very easy to understand and use. The most important requirement is to
+require just a few steps to track all the required information. Only this will
+keep the user engaged and raise the accuracy of the provided data.
 
 \subsection{Main Features}
 The user is able to:
@@ -97,17 +122,16 @@ The user is able to:
     \item register and login to trckr
     \item create and edit projects
     \item create, track and edit tasks
-    \item visit trckr also on a mobile browser
+    \item visit trckr on any device
 \end{itemize}
 
-
-\section{Technolgies}
-
-
+\section{Technologies}
 \subsection{Django}
-Django is an open source web framework written in Python. It is very useful for fast, clean and simple development of web applications.\\
-One of the main advantages is its fast setup, therefore you can start developing your application very quick.
-Django comes with support of various database integrations.
+Django is an open source web framework written in Python. It is very useful for
+fast, clean and simple development of web applications. One of the main
+advantages is its fast setup, therefore you can start developing your
+application very quick. Django comes with support of various database
+integrations.
 
 \subsection{PostgreSQL}
 Trckr runs with a PostgreSQL database in the backend. PostgreSQL is fully supported by Django and
