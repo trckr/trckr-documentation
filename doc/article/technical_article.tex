@@ -14,7 +14,7 @@
     \usepackage[ddmmyyyy]{datetime}
     \usepackage[toc,page]{appendix}
     \graphicspath{ {images/} }
-    \usepackage[style=ieee,sorting=none,backend=bibtex]{biblatex}
+    \usepackage[style=numeric,sorting=none,backend=bibtex]{biblatex}
     \addbibresource{citations.bib}
     \usepackage[citecolor=black]{hyperref}
 
@@ -133,11 +133,6 @@ Pacassi, David\\
   Despite being targeted at large companies, trckr will remain open source and
   anybody can contribute, covering cases we might have never dreamed of.
 \end{abstract}
-
-\clearpage
-
-\setcounter{tocdepth}{2}
-\tableofcontents
 
 \clearpage
 
@@ -340,10 +335,6 @@ modules for the frontend was without big effort, beside testing.
 
 % Appendices
 \clearpage
-\begin{appendices}
 \printbibliography
-%\listoftables
-\listoffigures
-\end{appendices}
 
 \end{document}
