@@ -126,6 +126,11 @@ The user is able to:
     \item visit trckr on any device
 \end{itemize}
 
+\section{Architecture}
+The trckr project consists of two separate applications. The business and data layer are  handled by the backend application, while the presentation layer is implemented through the frontend application. The backend provides a RESTful API, which is used by the frontend application to read and write the necessary data.
+
+This separation of concerns, achieved through the clear decoupling between the frontend and backend, allows for easy extensibility and fast development cycles. Additionally one backend is able to serve multiple client applications, without any further work required.
+
 \section{Technologies}
 \subsection{Django}
 Django is an open source web framework written in Python. It encourages fast,
@@ -136,9 +141,14 @@ databases. Many users compare Django to Ruby On Rails but written in Python.
 Django also follows the DRY principle (Don't Repeat Yourself).
 
 \subsection{PostgreSQL}
-A PostgreSQL database stores all the data for trckr. PostgreSQL is fully
-supported by Django and configuration and management is minimal, because the
-database access is handled by Django.
+PostgreSQL is an open source object-relational database. The database is used to store all the data for trckr. PostgreSQL is fully
+supported by Django and requires minimal configuration. The communication between the web application and the database is done through Django's model layer.
+
+\subsection{Docker}
+Docker is a containerization platform, which adds an abstraction layer between the application environement and the underlying server infrastruture. This means that the whole backend environment can be setup inside multiple docker containers, that can be run locally as well as on the server. 
+
+\subsection{Node.js}
+Node.js is a Javascript runtime, which brings Javascript to the server environment. It uses an event-driven and non-blocking I/O model for maximum efficiency, while remaining lightweight. This makes node.js the ideal technology to implement the server side of the trckr frontend application. 
 
 \subsection{Vue.js}
 Vue.js is a progressive framework for building user interfaces.\cite{vuejs}
@@ -149,8 +159,7 @@ on a website. This and the ability to easily make calls to the backend make it a
 good fit for trckr.
 
 \section{Results}
-The architecture was kept fairly simple, as illustrated in figure
-\ref{fig:architecture}, using Django with PostgreSQL in the backend and a
+The architecture was kept fairly simple, while still providing a clear seperation of concerns as illustrated in figure \ref{fig:architecture}, using Django with PostgreSQL in the backend and a
 frontend based around Vue.js.
 
 \begin{figure}[h]
@@ -212,7 +221,10 @@ Once the registration process has been completed, the
 user can log in at the login page. Once the user is logged in, the navigation
 bar at the top of the interface will contain links to the dashboard, the
 projects page and the time entries page as well as a logout button. The dashboard
-displays graphs... TODO
+displays different graphs to provide the user with a visual overview over their recent activities.
+This way the user can easily see, how much time was already tracked for each task and it enables
+the user to quickly proceed with their work, whithout having to search for a relevant task.
+% TODO include figure once the dashboard is finished...
 
 The projects page shows a table of all projects that the currently logged in
 user is a part of, seen in figure \ref{fig:trckr-project-page}. There is a
