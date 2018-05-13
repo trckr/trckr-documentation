@@ -7,6 +7,10 @@
     \usepackage[onehalfspacing]{setspace}
     \usepackage{times}
     \usepackage{graphicx}
+    \usepackage{fancyhdr}
+    \usepackage{lastpage}
+    \usepackage[affil-it]{authblk}
+    \usepackage[ddmmyyyy]{datetime}
     \graphicspath{ {images/} }
 
 
@@ -26,39 +30,71 @@
 \g@addto@macro\@floatboxreset\centering
 \makeatother
 
+\pagestyle{fancy}
+\renewcommand{\dateseparator}{.}
+
+\lhead{Technical Article}
+\rhead{PSIT4}
+
+\fancyfoot[L]{\footnotesize \today }
+\fancyfoot[C]{\footnotesize Page \thepage\ of \pageref{LastPage}}
+
 % Title Page Information-----------------------------------------------------------------------------
 %   These are the informations printed on the title page of the article
 % ---------------------------------------------------------------------------------------------------
-
-\title{Project trckr}
-\subtitle{Technical Article}
-\date{May 2018}
-% TODO: authors more compact? 
-\author{
-Ankeshian, Gabriel\\
-\texttt{ankesgab@students.zhaw.ch}
-\and
-Balidis, Dimitri\\
-\texttt{baliddim@students.zhaw.ch}
-\and
-Christen, Luca\\
-\texttt{chrisluc@students.zhaw.ch}
-\and
-Jossi, Savino\\
-\texttt{jossisav@students.zhaw.ch}
-\and
-Milenkovic, Daniel\\
-\texttt{milendan@students.zhaw.ch}
-\and
-Nominato, Angelica Helena Moreira Alves\\
-\texttt{moreiane@students.zhaw.ch}
-\and
-Pacassi, David\\
-\texttt{pacasdav@students.zhaw.ch}}
+\fancypagestyle{firstpage}
+{
+	\renewcommand{\headrulewidth}{0pt}
+	\fancyhf{}
+}\fancyfoot[R]{\footnotesize IT15ta\_ZH Group trckr}
 
 \begin{document}
-\maketitle
-\pagebreak
+\begin{titlepage}
+\thispagestyle{firstpage}
+\centering
+\includegraphics[width=0.3\textwidth]{logo}\par
+\vspace{1cm}
+
+{\scshape\LARGE Project trckr \par}
+\vspace{0.3cm}
+
+{\scshape\Large Technical Article\par}
+\vspace{0.5cm}
+
+{\scshape IT15ta\_ZH - PSIT4\par}
+\vspace{0.5cm}
+Ankeshian, Gabriel\\
+\texttt{ankesgab@students.zhaw.ch}
+
+\vspace{0.2cm}
+Balidis, Dimitri\\
+\texttt{baliddim@students.zhaw.ch}
+
+\vspace{0.2cm}
+Christen, Luca\\
+\texttt{chrisluc@students.zhaw.ch}
+
+\vspace{0.2cm}
+Jossi, Savino\\
+\texttt{jossisav@students.zhaw.ch}
+
+\vspace{0.2cm}
+Milenkovic, Daniel\\
+\texttt{milendan@students.zhaw.ch}
+
+\vspace{0.2cm}
+Nominato, Angelica Helena Moreira Alves\\
+\texttt{moreiane@students.zhaw.ch}
+
+\vspace{0.2cm}
+Pacassi, David\\
+\texttt{pacasdav@students.zhaw.ch}
+
+\vfill
+
+% Bottom of the page
+	{\large \today\par}
+\end{titlepage}
 
 % Proofreading Checklist
 % * avoid passive voice
@@ -91,11 +127,12 @@ Pacassi, David\\
   This will allow the user to leverage trckr to handle the ever increasing
   complexity in project management and task tracking found in large companies.
   Despite being targeted at large companies, trckr will remain open source and
-  anybody can contribute, covering cases we might have never dreamed of.
+  anybody can contribute, covering cases we might have never dreamehttps://www.theverge.com/d of.
 \end{abstract}
 
 \clearpage
 
+\setcounter{tocdepth}{2}
 \tableofcontents
 
 \clearpage
@@ -148,7 +185,7 @@ supported by Django and requires minimal configuration. The communication betwee
 Docker is a containerization platform, which adds an abstraction layer between the application environement and the underlying server infrastruture. This means that the whole backend environment can be setup inside multiple docker containers, that can be run locally as well as on the server. 
 
 \subsection{Node.js}
-Node.js is a Javascript runtime, which brings Javascript to the server environment. It uses an event-driven and non-blocking I/O model for maximum efficiency, while remaining lightweight. This makes node.js the ideal technology to implement the server side of the trckr frontend application. 
+Node.js is a Javascript runtime, which brings Javascript to the server environment. It uses an event-driven and non-blocking I/O model for maximum efficiency, while still remaining lightweight. This makes node.js the ideal technology to implement the server side of the trckr frontend application.
 
 \subsection{Vue.js}
 Vue.js is a progressive framework for building user interfaces.\cite{vuejs}
