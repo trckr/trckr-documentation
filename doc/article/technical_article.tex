@@ -121,17 +121,19 @@ Pacassi Torrico, David\\
 
   The backend is written in Python with the help of the web application
   framework Django and the frontend with the Javascript UI framework Vue.js.
-  Both technologies were new to most team members, but have proven themselves
-  effective and learning them were ultimately a benefit to the outcome of the
-  project.
+  Both technologies were new to most team members, but all membershave proven
+  themselves
+  %effective
+  self driven and learning these skills was ultimately a benefit to the
+  outcome of the project.
 
   In order to compete with similar tools and web services, trckr focuses on
   performance and usability. To distinguish trckr from the competition, many
   features are planned to manage projects and tasks in a user-friendly manner.
   This will allow the user to leverage trckr to handle the ever increasing
   complexity in project management and task tracking found in large companies.
-  Despite being targeted at large companies, trckr will remain open source and
-  anybody can contribute, covering cases we might have never dreamed of.
+  Despite targeting large companies, trckr will remain open source and
+  anyone can contribute, covering cases we might have never dreamed of.
 \end{abstract}
 
 \clearpage
@@ -140,18 +142,22 @@ Pacassi Torrico, David\\
 Time and task tracking are important activities in many businesses to gain
 insights on the productivity of a team, requiring appropriate tools allowing
 easier and more accurate time tracking. Many processes and methods have been
-developed in the past to cover this need. Unfortunately most of them address
-just a certain need or have been fine tuned to a specific company or team. This
-necessarily leads to a loss of experience that could have been leveraged by
+developed in the past to cover this need. Unfortunately most of them only
+address a certain need or have been fine tuned to a specific company or team.
+This not only leads to a loss of experience that could have been leveraged by
 other teams but is also not generic enough to adapt to different processes,
 causing other companies to inappropriately adapt to the tool instead of the tool
 adapting to the company.
 
 \subsection{Objectives}
 The goal with trckr is to develop and distribute a time tracking web application
-that is easy to understand and use. The most important requirement is to
-require just a few steps to track all the required information. Only this will
-keep the user engaged and raise the accuracy of the provided data.
+that is easy to both understand and use. The most important non-functional
+requirement is to focus on a small amount of steps for users to track all the
+required information.
+%The most important requirement is to require just a few steps to track all the
+%required information.
+Only this will keep the user engaged and increase the accuracy of the provided
+data.
 
 \subsection{Main Features}
 The user is able to:
@@ -171,7 +177,7 @@ This separation of concerns, achieved through the clear decoupling between the f
 \subsection{Django}
 Django is an open source web framework written in Python.\cite{django} It encourages fast,
 clean and simple development of web applications. One of the main advantages is
-it's fast setup, enabling the developer to create applications swiftly through
+its fast setup, enabling the developer to create applications swiftly through
 it's Model-View-Presenter scheme. Django also comes with support for various
 databases. Many users compare Django to Ruby On Rails but written in Python.
 Django also follows the DRY principle (Don't Repeat Yourself).
@@ -188,15 +194,20 @@ Node.js is a Javascript runtime, which brings Javascript to the server environme
 
 \subsection{Vue.js}
 Vue.js is a progressive framework for building user interfaces.\cite{vuejs}
-Vue.js is used for trckr mainly for its simplicity and the rather shallow
-learning curve it provides to unexperienced developers. The features that Vue.js
-provides allow the creation of data structures that can easily be displayed in
-on a website. This and the ability to easily make calls to the backend make it a
-good fit for trckr.
+Vue.js is used mainly for its simplicity and the rather shallow learning curve
+it provides unexperienced developers. The features that Vue.js provides allow
+the creation of data structures that can easily be displayed on a website. This
+and the ability to easily make calls to the backend make it a good fit for
+trckr.
 
 \section{Results}
-The architecture was kept fairly simple, while still providing a clear seperation of concerns as illustrated in figure \ref{fig:architecture}, using Django with PostgreSQL in the backend and a
-frontend based around Vue.js.
+The architecture was kept fairly simple, while still providing a clear
+seperation of concerns as illustrated in figure \ref{fig:architecture}, using
+Django with PostgreSQL in the backend and a frontend based around Vue.js.
+
+%TODO: baliddim: I don't think we can write figure instead of Figure. -> by
+%design
+%TODO: Front-End and Back-End in figure 1.
 
 \begin{figure}[h]
     \includegraphics[width=8cm]{architecture}
@@ -218,11 +229,11 @@ token to be accessed.
   server to access the other parts of the API. Via this endpoint, one can also
   invalidate the token.
 \item[user] is only used to create new user accounts.
-\item[projects] lets user create, read, update and delete projects as well as
+\item[projects] allows users create, read, update and delete projects and
   display all the tasks associated with a project.
-\item[task] used to create, read and update tasks for a given project. There
-  also exits a way to list all relevant time entries for a task.
-\item[time entries] also used for create, read, update and delete operations
+\item[task] is used to create, read and update tasks for a given project. There
+  is also a way to list all relevant time entries for a task.
+\item[time entries] are also used to create, read, update and delete operations
 \end{description}
 
 Each object of an entity has a unique ID. This ID can be used to retrieve
