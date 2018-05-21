@@ -122,8 +122,8 @@ Pacassi Torrico, David\\
   The backend is written in Python with the help of the web application
   framework Django and the frontend with the Javascript UI framework Vue.js.
   Both technologies were new to most team members, but all members have proven
-  themselves self-driven and learning these skills was ultimately a benefit to the
-  outcome of the project.
+  themselves self-driven and learning these skills was ultimately a benefit to
+  the outcome of the project.
 
   In order to compete with similar tools and web services, trckr focuses on
   performance and usability. To distinguish trckr from the competition, many
@@ -151,9 +151,8 @@ adapting to the company.
 The goal with trckr is to develop and distribute a time tracking web application
 that is easy to both understand and use. The most important non-functional
 requirement is to focus on a small amount of steps for users to track all the
-required information.
-Only this will keep the user engaged and increase the accuracy of the provided
-data.
+required information. Only this will keep the user engaged and increase the
+accuracy of the provided data.
 
 \subsection{Main Features}
 The user is able to:
@@ -165,28 +164,44 @@ The user is able to:
 \end{itemize}
 
 \section{Architecture}
-The trckr project consists of two separate applications. The business and data layer are  handled by the backend application, while the presentation layer is implemented through the frontend application. The backend provides a RESTful API, which is used by the frontend application to read and write the necessary data.
+The trckr project consists of two separate applications. The business and data
+layer are  handled by the backend application, while the presentation layer is
+implemented through the frontend application. The backend provides a RESTful
+API, which is used by the frontend application to read and write the necessary
+data.
 
-This separation of concerns, achieved through the clear decoupling between the frontend and backend, allows for easy extensibility and fast development cycles. Additionally one backend is able to serve multiple client applications, without any further work required.
+This separation of concerns, achieved through the clear decoupling between the
+frontend and backend, allows for easy extensibility and fast development cycles.
+Additionally one backend is able to serve multiple client applications, without
+any further work required.
 
 \section{Technologies}
 \subsection{Django}
-Django is an open source web framework written in Python.\cite{django} It encourages fast,
-clean and simple development of web applications. One of the main advantages is
-its fast setup, enabling the developer to create applications swiftly through
-it's Model-View-Presenter scheme. Django also comes with support for various
-databases. Many users compare Django to Ruby On Rails but written in Python.
-Django also follows the DRY principle (Don't Repeat Yourself).
+Django is an open source web framework written in Python.\cite{django} It
+encourages fast, clean and simple development of web applications. One of the
+main advantages is its fast setup, enabling the developer to create applications
+swiftly through it's Model-View-Presenter scheme. Django also comes with support
+for various databases. Many users compare Django to Ruby On Rails but written in
+Python. Django also follows the DRY principle (Don't Repeat Yourself).
 
 \subsection{PostgreSQL}
-PostgreSQL is an open source object-relational database.\cite{postgre} The database is used to store all the data for trckr. PostgreSQL is fully
-supported by Django and requires minimal configuration. The communication between the web application and the database is done through Django's model layer.
+PostgreSQL is an open source object-relational database.\cite{postgre} The
+database is used to store all the data for trckr. PostgreSQL is fully supported
+by Django and requires minimal configuration. The communication between the web
+application and the database is done through Django's model layer.
 
 \subsection{Docker}
-Docker is a containerization platform, which adds an abstraction layer between the application environement and the underlying server infrastruture.\cite{docker} This means that the whole backend environment can be setup inside multiple docker containers, that can be run locally as well as on the server. 
+Docker is a containerization platform, which adds an abstraction layer between
+the application environement and the underlying server
+infrastruture.\cite{docker} This means that the whole backend environment can be
+setup inside multiple docker containers, that can be run locally as well as on
+the server. 
 
 \subsection{Node.js}
-Node.js is a Javascript runtime, which brings Javascript to the server environment.\cite{nodejs} It uses an event-driven and non-blocking I/O model for maximum efficiency, while still remaining lightweight. This makes node.js the ideal technology to implement the server side of the trckr frontend application.
+Node.js is a Javascript runtime, which brings Javascript to the server
+environment.\cite{nodejs} It uses an event-driven and non-blocking I/O model for
+maximum efficiency, while still remaining lightweight. This makes node.js the
+ideal technology to implement the server side of the trckr frontend application.
 
 \subsection{Vue.js}
 Vue.js is a progressive framework for building user interfaces.\cite{vuejs}
@@ -212,9 +227,9 @@ Django with PostgreSQL in the back-end and a front-end based around Vue.js.
 The backend of the trckr application implements a RESTful API using the Django
 REST framework. The API provides basic CRUD operations for all the entities
 available in the database. There are five main endpoints to retrieve and save
-data on the server: authentication, user, projects, tasks and time entries. Except
-for the authentication and user endpoints, all endpoints need an authentication
-token to be accessed.
+data on the server: authentication, user, projects, tasks and time entries.
+Except for the authentication and user endpoints, all endpoints need an
+authentication token to be accessed.
 
 \subsubsection{Endpoints}
 \begin{description}
@@ -256,23 +271,24 @@ like username, password, email address and first and last name (Figure
     \label{fig:trckr-register}
 \end{figure}
 
-Once the registration process has been completed, the
-user can log in at the login page. Once the user is logged in, the navigation
-bar at the top of the interface will contain links to the dashboard, the
-projects page and the time entries page as well as a logout button. The dashboard
-displays different graphs to provide the user with a visual overview over their recent activities.
-This way the user can easily see, how much time was already tracked for each task and it enables
-the user to quickly proceed with their work, whithout having to search for a relevant task.
+Once the registration process has been completed, the user can log in at the
+login page. Once the user is logged in, the navigation bar at the top of the
+interface will contain links to the dashboard, the projects page and the time
+entries page as well as a logout button. The dashboard displays different graphs
+to provide the user with a visual overview over their recent activities. This
+way the user can easily see, how much time was already tracked for each task and
+it enables the user to quickly proceed with their work, whithout having to
+search for a relevant task.
 % TODO include figure once the dashboard is finished...
 
 The projects page shows a table of all projects that the currently logged in
-user is a part of, this can be seen in figure \ref{fig:trckr-projects-table}. There is a
-search box above the projects table that allows a user to filter for a project or
-a group of projects containing the given keywords. To create a new project the
-user will have to navigate to the projects page and click on the "Create
-project" link which will open the project creation form. % please add figure
-The form asks for the name of the project and optionally allows the user to enter an
-description.
+user is a part of, this can be seen in figure \ref{fig:trckr-projects-table}.
+There is a search box above the projects table that allows a user to filter for
+a project or a group of projects containing the given keywords. To create a new
+project the user will have to navigate to the projects page and click on the
+"Create project" link which will open the project creation form. % please add
+figure The form asks for the name of the project and optionally allows the user
+to enter an description.
 
 Each project can be viewed in more detail when the project inside the table is
 clicked, as shown in figure \ref{fig:trckr-project-page}. The project page
@@ -331,8 +347,8 @@ The aim of project trckr was to create a tool, which helps people track their
 time on projects. With the help of Django in the frontend and vuejs in the
 frontend, we developed a webapp with modern approaches and software developing
 methods. To integrate trckr into our productive environement, we used circleci,
-a very useful and automated integration tool. It helped us during the development
-phase target and solve bugs and other errors.
+a very useful and automated integration tool. It helped us during the
+development phase target and solve bugs and other errors.
 
 Getting started with vuejs was easy and fast for everyone, so developing single
 modules for the frontend was without big effort, beside testing.
