@@ -119,7 +119,7 @@ Pacassi Torrico, David\\
   The back-end is written in Python with the help of the web application
   framework Django and the front-end with the Javascript UI framework Vue.js.
   Both technologies were new to most team members, but all members have proven
-  themselves self-driven, and learning these skills was ultimately a benefit to
+  themselves motivated to learn these skills which was ultimately a benefit to
   the outcome of the project.
 
   In order to compete with similar tools and web services, trckr focuses on
@@ -127,8 +127,8 @@ Pacassi Torrico, David\\
   features are planned to manage projects and tasks in a user-friendly manner.
   This will allow the user to leverage trckr to handle the ever-increasing
   complexity in project management and task tracking found in large companies.
-  Despite targeting large companies, trckr will remain open-source and
-  anyone can contribute.
+  Despite targeting large companies, trckr will remain open-source and anyone
+  can contribute to the codebase who might wish to do so.
 \end{abstract}
 
 \clearpage
@@ -138,10 +138,11 @@ Time and task tracking are important activities in many businesses to gain
 insights on the productivity of a team. Appropriate tools allow easier and more
 accurate time tracking. Many processes and methods have been developed in the
 past to cover this need. Unfortunately most of them only address a certain need
-or have been fine-tuned to a specific company or team. This not only leads to a
-loss of experience that could have been leveraged by other teams but is also not
-generic enough to adapt to different processes, causing other companies to
-inappropriately adapt to the tool instead of the tool adapting to the company.
+or have been fine-tuned to fit a specific company or team. This not only leads
+to a loss of experience that could have been leveraged by other teams but is
+also not generic enough to adapt to different processes, causing other companies
+to inappropriately adapt to the tool instead of the tool adapting to the
+company.
 
 \subsection{Objectives}
 The goal with trckr is to develop and distribute a time tracking web application
@@ -183,7 +184,7 @@ Django is an open-source web framework written in Python.\cite{django} It
 encourages fast, clean and simple development of web applications. One of the
 main advantages is its fast setup, enabling the developer to create applications
 swiftly through its Model-View-Presenter scheme. Django also comes with support
-for various databases and follows the DRY principle (Don't Repeat Yourself).
+for various databases and follows the DRY (Don't Repeat Yourself) principle.
 
 \subsection{PostgreSQL}
 PostgreSQL is an open-source object-relational database.\cite{postgre} The
@@ -192,11 +193,10 @@ by Django and requires minimal configuration. The communication between the web
 application and the database is done through Django's model layer.
 
 \subsection{Docker}
-Docker is a containerization platform which adds an abstraction layer between
-the application environement and the underlying server
-infrastruture.\cite{docker} This means that the whole back-end environment can
-be setup inside multiple docker containers that can be run locally as well as on
-the server.
+Docker is a containerization platform that adds an abstraction layer between the
+application environement and the underlying server infrastruture.\cite{docker}
+This means that the whole back-end environment can be setup inside multiple
+docker containers that can be run locally as well as on the server.
 
 \subsection{Node.js}
 Node.js is a Javascript runtime which brings Javascript to the server
@@ -246,8 +246,8 @@ server. This is necessary when updating an object via a POST request.
 When a user first opens up the trckr web application, the user is presented with
 the login screen as shown in Figure \ref{fig:trckr-login}. For users who have
 not yet registered an account, they can create one by clicking on "Register" and
-entering some basic information like username, password, email address as well
-as first and last name (see Figure \ref{fig:trckr-register}).
+entering their basic information, i.e. their username, password, email address
+as well as first and last name (see Figure \ref{fig:trckr-register}).
 
 \begin{figure}[h]
     \includegraphics[width=0.8\textwidth]{trckr-login}
@@ -262,13 +262,13 @@ as first and last name (see Figure \ref{fig:trckr-register}).
 \end{figure}
 
 Once the registration process has been completed, the user can log in at the
-login page. After that, the navigation bar at the top of the interface will
-contain links to the dashboard, the projects page and the time entries page as
-well as a logout button. The dashboard displays different graphs to provide the
-user with a visual overview of their recent activities. This way the user can
-easily see how much time was already tracked for each task and it enables the
-user to quickly proceed with their work, whithout having to search for a
-relevant task.
+login page. After a successful login, the navigation bar at the top of the
+interface will contain links to the dashboard, the projects page and the time
+entries page as well as a logout button. The dashboard displays different graphs
+to provide the user with a visual overview of their recent activities. This way
+the user can easily see how much time was already tracked for each task and it
+enables the user to quickly proceed with their work, whithout having to search
+for a relevant task.
 % TODO include figure once the dashboard is finished...
 
 The projects page shows a table of all projects that the currently logged in
@@ -277,7 +277,7 @@ There is a search box above the projects table that allows a user to filter for
 a project or a group of projects containing the given keywords. To create a new
 project, the user will have to navigate to the projects page and click the
 "Create project" link which will open the project creation form. The user
-specifies the name for the project and has also the option to enter a
+specifies the name for the project and also has the option to enter a
 discription (see Figure \ref{fig:trckr-create-project}).
 
 \begin{figure}[h]
@@ -330,10 +330,10 @@ methods, maybe even an interface with ticketing or project management tools.
 This enables the team leaders to gain more insight on the progress.
 
 A desktop application could be developed to automatically track usage of certain
-applications or integrations for IDEs to track time worked on a project. By
-reducing the manual intervention of the user, the tracking could become even
-more accurate. This might even uncover certain inefficiencies, e.g. by detecting
-too much time wasted waiting for tests or deployments.
+applications or integrations for development environments to track time worked
+on a project. By reducing the manual intervention of the user, the tracking
+could become even more accurate. This might even uncover certain inefficiencies,
+e.g. by detecting too much time wasted waiting for tests or deployments.
 
 \section{Conclusion}
 The aim of the project trckr was to create a tool which helps people and
