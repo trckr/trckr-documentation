@@ -111,19 +111,18 @@ Pacassi Torrico, David\\
 % ------------------------------------------------------------------------------
 \begin{abstract}
   The main goal of the present article is to describe the idea, goals and main
-  functionalities of the web-based application trckr. We developed trckr for
+  functionalities of the web-based application trckr. The audience for trckr 
   % Since we want trckr to be all lowercase, we avoid using it at the start of
   % the sentence
-  everyone who works on a project and needs an intuitive and simple web tool to
-  accurately track their time spent on d
-ifferent tasks.
+  are people who work on a project and need an intuitive and simple web tool to
+  accurately track their time spent on different tasks.
   % Hint: Empty line makes a paragraph which is semantically different from the
   % forced \\ newline (and much neater)
 
   The back-end is written in Python with the help of the web application
   framework Django and the front-end with the Javascript UI framework Vue.js.
   Both technologies were new to most team members, but all members have proven
-  themselves motivated to learn these skills which was ultimately a benefit to
+  themselves motivated to learn these skills which were ultimately a benefit to
   the outcome of the project.
 
   In order to compete with similar tools and web services, trckr focuses on
@@ -199,8 +198,8 @@ application and the database is done through Django's model layer.
 \subsection{Docker}
 Docker is a containerization platform that adds an abstraction layer between the
 application environement and the underlying server infrastruture.\cite{docker}
-This means that the whole back-end environment can be setup inside multiple
-docker containers that can be run locally as well as on the server.
+This means that the complete back-end environment can be setup inside multiple
+docker containers that can be run locally as well as on any server.
 
 \subsection{Node.js}
 Node.js is a Javascript runtime which brings Javascript to the server
@@ -211,7 +210,7 @@ ideal technology to implement the server side of the trckr front-end application
 \subsection{Vue.js}
 Vue.js is a progressive framework for building user interfaces.\cite{vuejs}
 Vue.js is used mainly for its simplicity and the rather shallow learning curve
-it provides unexperienced developers. The features of Vue.js allow
+it provides to inexpierienced developers. The features of Vue.js allow
 the creation of data structures that can easily be displayed on a website. This
 and the ability to easily make calls to the back-end make it a good fit for
 trckr.
@@ -231,11 +230,11 @@ results immediately.
 
 \subsection{API}
 The back-end of the trckr application implements a RESTful API using the Django
-REST framework. The API provides basic CRUD operations for all the entities
-available in the database. There are five main endpoints to retrieve and save
-data on the server: authentication, user, projects, tasks and time entries.
-Except for the authentication and user endpoints, all endpoints need an
-authentication token to be accessed.
+REST framework. The API provides basic CRUD (create, read, update, delete)
+operations for all the entities available in the database. There are five main
+endpoints to retrieve and save data on the server: authentication, user, 
+projects, tasks and time entries. Except for the authentication and user
+endpoints, all endpoints need an authentication token to be accessed.
 
 \subsubsection{Endpoints}
 \begin{description}
@@ -252,7 +251,7 @@ authentication token to be accessed.
 
 Each object of an entity has a unique ID. This ID can be used to retrieve
 information for that specific object by providing it in the URL when calling the
-server. This is necessary when updating an object via a POST request.
+server. This is necessary when updating an object via a PUT request.
 
 \subsection{User Interface}
 % SJ: I removed details about the implementation (receive a token) and rewrote
@@ -286,7 +285,7 @@ enables the user to quickly proceed with their work, whithout having to search
 for a relevant task.
 % TODO include figure once the dashboard is finished...
 
-The projects page shows a table of all projects that the currently logged in
+The "Projects" page shows a table of all projects that the currently logged in
 user is a part of; this can be seen in Figure \ref{fig:trckr-projects-table}.
 There is a search box above the projects table that allows a user to filter for
 a project or a group of projects containing the given keywords. To create a new
@@ -296,23 +295,24 @@ specifies the name for the project and also has the option to enter a
 description (see Figure \ref{fig:trckr-create-project}).
 
 \begin{figure}[h]
-    \includegraphics[width=\textwidth]{trckr-create-project}
-    \caption{The dialog to create a new project}
-    \label{fig:trckr-create-project}
+	\includegraphics[width=0.8\textwidth]{trckr-projects-table}
+	\caption{The projects page with the table containing the projects}
+	\label{fig:trckr-projects-table}
 \end{figure}
+
+\begin{figure}[h]
+	\includegraphics[width=0.8\textwidth]{trckr-create-project}
+	\caption{The dialog to create a new project}
+	\label{fig:trckr-create-project}
+\end{figure}
+
 
 Each project can be viewed in more detail by clicking the project name in the
 table shown in figure \ref{fig:trckr-project-page}. The project page contains
 the name, the description and a table of all the tasks in the selected project.
 
 \begin{figure}[h]
-    \includegraphics[width=\textwidth]{trckr-projects-table}
-    \caption{The projects page with the table containing the projects}
-    \label{fig:trckr-projects-table}
-\end{figure}
-
-\begin{figure}[h]
-    \includegraphics[width=\textwidth]{trckr-project-page}
+    \includegraphics[width=0.8\textwidth]{trckr-project-page}
     \caption{The project page with the table of all tasks}
     \label{fig:trckr-project-page}
 \end{figure}
@@ -326,12 +326,12 @@ of a project with the entry form shown in Figure
 task for which the time entry should be created.
 
 \begin{figure}[h]
-    \includegraphics[width=\textwidth]{trckr-create-time-entry}
+    \includegraphics[width=0.8\textwidth]{trckr-create-time-entry}
     \caption{The form to add a time entry to a task.}
     \label{fig:trckr-create-time-entry}
 \end{figure}
 
-All time entries will be displayed on the time entry page.
+All time entries will be displayed on the time entries page.
 
 \section{Working with Scrum}
 Scrum describes a framework for agile software development. Agile in this
@@ -355,7 +355,7 @@ determine which features should be added next or be improved upon.
 
 Project-focused features can be improved to enable more specific project
 methods, maybe even an interface with ticketing or project management tools.
-This enables the team leaders to gain more insight on the progress.
+This would enable the team leaders to gain more insight on the progress.
 
 A desktop application could be developed to automatically track usage of certain
 applications or integrations for development environments to track time worked
