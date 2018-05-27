@@ -110,16 +110,16 @@ Pacassi Torrico, David\\
 %   This is the abstract of the technical article
 % ------------------------------------------------------------------------------
 \begin{abstract}
-  The main goal of the present article is to describe the idea, goals and main
-  functionalities of the web-based application trckr. The audience for trckr 
+  The main goal of this article is to describe the idea, goals and main
+  functionalities of the web based application trckr. We developed trckr for
   % Since we want trckr to be all lowercase, we avoid using it at the start of
   % the sentence
-  are people who work on a project and need an intuitive and simple web tool to
-  accurately track their time spent on different tasks.
+  everyone who works on a project and needs an intuitive and simple web tool to
+  accurately track their time spent on various tasks.
   % Hint: Empty line makes a paragraph which is semantically different from the
   % forced \\ newline (and much neater)
 
-  The back-end is written in Python with the help of the web application
+  The backend is written in Python with the help of the web application
   framework Django and the front-end with the Javascript UI framework Vue.js.
   Both technologies were new to most team members, but all members have proven
   themselves motivated to learn these skills which were ultimately a benefit to
@@ -138,42 +138,42 @@ Pacassi Torrico, David\\
 
 \section{Introduction}
 Time and task tracking are important activities in many businesses to gain
-insights on the productivity of a team. Appropriate tools allow easier and more
-accurate time tracking. Many processes and methods have been developed in the
-past to cover this need. Unfortunately most of them only address a certain need
-or have been fine-tuned to fit a specific company or team. This not only leads
-to a loss of experience that could have been leveraged by other teams but is
-also not generic enough to adapt to different processes, causing other companies
-to inappropriately adapt to the tool instead of the tool adapting to the
-company.
+insights into the productivity of a team, requiring appropriate tools allowing
+easier and more accurate time tracking. Many processes and methods have been
+developed in the past to cover this need. Unfortunately most of them only
+address a certain need or have been fine tuned to a specific company or team.
+This not only leads to a loss of experience that could have been leveraged by
+other teams but is also not generic enough to be adapted to different processes,
+causing other companies to inappropriately adapt to the tool instead of the tool
+adapting to the company.
 
 \subsection{Objectives}
 The goal with trckr is to develop and distribute a time tracking web application
 that is easy to both understand and use. The most important non-functional
-requirement is to focus on a small amount of steps for users to track all the
-required information. This will keep the user engaged and increase the accuracy
-of the provided data.
+requirement is to focus on a small amount of steps for users to track the
+important measurements. Only this will keep the user engaged and increase the
+accuracy of the provided data.
 
 \subsection{Main Features}
 The user is able to:
 \begin{itemize}
-    \item register and login to trckr
+    \item register and log in to trckr
     \item create and edit projects
     \item create, track and edit tasks
     \item visit trckr on any device
 \end{itemize}
 
 \section{Architecture}
-The trckr project consists of two separate applications. The business and data
-layers are handled by the back-end application while the presentation layer is
-implemented through the front-end application. The back-end provides a RESTful
-API which is used by the front-end application to read and write the necessary
-data.
+The trckr architecture consists of two separate applications. The business and
+data layer are handled by the back-end application, while the presentation layer
+is implemented through the front-end application. The back-end provides a
+RESTful API, which is used by the front-end application to read and write the
+necessary data.
 
-This separation of concerns, achieved through the clear decoupling between the
-front-end and back-end, allows for easy extensibility and fast development
-cycles. Additionally, a single back-end is able to serve multiple client
-applications without any further work required.
+This separation of concerns, achieved by decoupling the front-end and back-end,
+allows for easy extensibility and fast development cycles. Additionally, a
+single back-end is able to serve multiple client applications, without requiring
+further work.
 
 \begin{figure}[h]
     \includegraphics[width=8cm]{architecture}
@@ -185,9 +185,10 @@ applications without any further work required.
 \subsection{Django}
 Django is an open-source web framework written in Python.\cite{django} It
 encourages fast, clean and simple development of web applications. One of the
-main advantages is its fast setup, enabling the developer to create applications
-swiftly through its Model-View-Presenter scheme. Django also comes with support
-for various databases and follows the DRY (Don't Repeat Yourself) principle.
+main advantages is its fast setup, enabling developers to create applications
+swiftly with it's Model-View-Presenter scheme. Django also comes with support
+for various databases. Many users compare Django to Ruby On Rails but written in
+Python. Django also follows the DRY (Don't Repeat Yourself) principle.
 
 \subsection{PostgreSQL}
 PostgreSQL is an open-source object-relational database.\cite{postgre} The
@@ -196,37 +197,45 @@ by Django and requires minimal configuration. The communication between the web
 application and the database is done through Django's model layer.
 
 \subsection{Docker}
-Docker is a containerization platform that adds an abstraction layer between the
-application environement and the underlying server infrastruture.\cite{docker}
-This means that the complete back-end environment can be setup inside multiple
-docker containers that can be run locally as well as on any server.
+Docker is a containerization platform, which adds an abstraction layer between
+the application environment and the underlying server
+infrastructure\cite{docker}. This means that the whole back-end environment can
+be set up inside multiple docker containers which can be run locally as well as
+on the production server.
 
 \subsection{Node.js}
 Node.js is a Javascript runtime which brings Javascript to the server
 environment.\cite{nodejs} It uses an event-driven and non-blocking I/O model for
-maximum efficiency while still remaining lightweight. This makes node.js the
-ideal technology to implement the server side of the trckr front-end application.
+maximum efficiency while staying lightweight. This makes node.js the ideal
+technology to implement the server side of the trckr front-end application.
 
 \subsection{Vue.js}
-Vue.js is a progressive framework for building user interfaces.\cite{vuejs}
-Vue.js is used mainly for its simplicity and the rather shallow learning curve
-it provides to inexpierienced developers. The features of Vue.js allow
-the creation of data structures that can easily be displayed on a website. This
-and the ability to easily make calls to the back-end make it a good fit for
-trckr.
+Vue.js is a progressive framework used to build user interfaces\cite{vuejs}. It
+is preferred for its simplicity and the rather shallow learning curve it
+provides to new developers. The features of Vue.js allow the creation of data
+structures that can be easily displayed on a website. This and the ability to
+easily make calls to the back-end make it a good fit for trckr.
 
 \subsection{CircleCI}
 CircleCI is a continuous integration and deployment platform, enabling teams to
-build software quickly and safely.\cite{circleci} Every time new code is
-committed, it runs a test suite to confirm that nothing broke and then
-immediately deploys this new version. Thus enabling features to be created
-quickly, without long and complicated deployments where certain bugs are
-discovered when the product should be going live. Using this technology enabled
-the trckr developers to develop features and immediately use them, motivating
-everybody to constantly improve the product in small steps and see and feel the
-results immediately.
+build software quickly and safely. Every time new code is committed, it runs a
+test suite to confirm that the new code is functional and then immediately
+deploys this new version. Thus enabling features to be created quickly, without
+long and complicated deployments where certain bugs are discovered when the
+product should be going live. This technology enabled the trckr developers to
+implement features and immediately use them, motivating everybody to constantly
+improve the product in small steps and see and feel the results immediately.
 
 \section{Results}
+The architecture was kept fairly simple, while still providing a clear
+separation of concerns as illustrated in figure \ref{fig:architecture} using
+Django with PostgreSQL in the back-end and the front-end based around Vue.js.
+
+\begin{figure}[h]
+    \includegraphics[width=8cm]{architecture}
+    \caption{Architecture of trckr}
+    \label{fig:architecture}
+\end{figure}
 
 \subsection{API}
 The back-end of the trckr application implements a RESTful API using the Django
@@ -254,14 +263,10 @@ information for that specific object by providing it in the URL when calling the
 server. This is necessary when updating an object via a PUT request.
 
 \subsection{User Interface}
-% SJ: I removed details about the implementation (receive a token) and rewrote
-% to reflect the UX
-
-When a user first opens up the trckr web application, the user is presented with
-the login screen as shown in Figure \ref{fig:trckr-login}. For users who have
-not yet registered an account, they can create one by clicking on "Register" and
-entering their basic information, i.e. their username, password, email address
-as well as first and last name (see Figure \ref{fig:trckr-register}).
+Before logging in, users are presented with the login screen as shown in figure
+\ref{fig:trckr-login}. For users who have not yet registered an account, this
+can be done here by entering some basic information like username, password,
+email address and first and last name (Figure \ref{fig:trckr-register}).
 
 \begin{figure}[h]
     \includegraphics[width=0.8\textwidth]{trckr-login}
