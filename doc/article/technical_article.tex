@@ -119,7 +119,7 @@ Pacassi Torrico, David\\
   % Hint: Empty line makes a paragraph which is semantically different from the
   % forced \\ newline (and much neater)
 
-  The backend is written in Python with the help of the web application
+  The back-end is written in Python with the help of the web application
   framework Django and the front-end with the Javascript UI framework Vue.js.
   Both technologies were new to most team members, but all members have proven
   themselves motivated to learn these skills which were ultimately a benefit to
@@ -140,7 +140,7 @@ Pacassi Torrico, David\\
 Time and task tracking are important activities in many businesses to gain
 insights into the productivity of a team, requiring appropriate tools allowing
 easier and more accurate time tracking. Many processes and methods have been
-developed in the past to cover this need. Unfortunately most of them only
+developed in the past to cover this need. Unfortunately, most of them only
 address a certain need or have been fine tuned to a specific company or team.
 This not only leads to a loss of experience that could have been leveraged by
 other teams but is also not generic enough to be adapted to different processes,
@@ -172,8 +172,7 @@ necessary data.
 
 This separation of concerns, achieved by decoupling the front-end and back-end,
 allows for easy extensibility and fast development cycles. Additionally, a
-single back-end is able to serve multiple client applications, without requiring
-further work.
+single back-end is able to serve multiple client applications.
 
 \begin{figure}[h]
     \includegraphics[width=8cm]{architecture}
@@ -186,9 +185,9 @@ further work.
 Django is an open-source web framework written in Python.\cite{django} It
 encourages fast, clean and simple development of web applications. One of the
 main advantages is its fast setup, enabling developers to create applications
-swiftly with it's Model-View-Presenter scheme. Django also comes with support
-for various databases. Many users compare Django to Ruby On Rails but written in
-Python. Django also follows the DRY (Don't Repeat Yourself) principle.
+swiftly with its Model-View-Presenter scheme. Django also comes with support for
+various databases. Django also follows the DRY (Don't Repeat Yourself)
+principle.
 
 \subsection{PostgreSQL}
 PostgreSQL is an open-source object-relational database.\cite{postgre} The
@@ -214,28 +213,20 @@ Vue.js is a progressive framework used to build user interfaces\cite{vuejs}. It
 is preferred for its simplicity and the rather shallow learning curve it
 provides to new developers. The features of Vue.js allow the creation of data
 structures that can be easily displayed on a website. This and the ability to
-easily make calls to the back-end make it a good fit for trckr.
+make calls to the back-end without difficulty make it a good fit for trckr.
 
 \subsection{CircleCI}
 CircleCI is a continuous integration and deployment platform, enabling teams to
-build software quickly and safely. Every time new code is committed, it runs a
-test suite to confirm that the new code is functional and then immediately
-deploys this new version. Thus enabling features to be created quickly, without
-long and complicated deployments where certain bugs are discovered when the
-product should be going live. This technology enabled the trckr developers to
-implement features and immediately use them, motivating everybody to constantly
-improve the product in small steps and see and feel the results immediately.
+build software quickly and safely.\cite{circleci} Every time new code is
+committed, it runs a test suite to confirm that the new code is working
+correctly and then immediately deploys this new version. Thus enabling features
+to be created quickly, without long and complicated deployments where certain
+bugs are discovered when the product should be going live. This technology
+enabled the trckr developers to implement features and immediately use them,
+motivating everybody to constantly improve the product in small steps and see
+and feel the results immediately.
 
 \section{Results}
-The architecture was kept fairly simple, while still providing a clear
-separation of concerns as illustrated in figure \ref{fig:architecture} using
-Django with PostgreSQL in the back-end and the front-end based around Vue.js.
-
-\begin{figure}[h]
-    \includegraphics[width=8cm]{architecture}
-    \caption{Architecture of trckr}
-    \label{fig:architecture}
-\end{figure}
 
 \subsection{API}
 The back-end of the trckr application implements a RESTful API using the Django
@@ -260,13 +251,14 @@ endpoints, all endpoints need an authentication token to be accessed.
 
 Each object of an entity has a unique ID. This ID can be used to retrieve
 information for that specific object by providing it in the URL when calling the
-server. This is necessary when updating an object via a PUT request.
+server.
 
 \subsection{User Interface}
-Before logging in, users are presented with the login screen as shown in figure
-\ref{fig:trckr-login}. For users who have not yet registered an account, this
-can be done here by entering some basic information like username, password,
-email address and first and last name (Figure \ref{fig:trckr-register}).
+Before logging in, users are presented with the login screen as shown in Figure
+\ref{fig:trckr-login}. For users who have not yet registered an account, they
+can create one by clicking on "Register" and entering their basic information,
+i.e. their username, password, email address as well as first and last name (see
+Figure \ref{fig:trckr-register})
 
 \begin{figure}[h]
     \includegraphics[width=0.8\textwidth]{trckr-login}
@@ -286,9 +278,8 @@ interface will contain links to the dashboard, the projects page and the time
 entries page as well as a logout button. The dashboard displays different graphs
 to provide the user with a visual overview of their recent activities. This way
 the user can easily see how much time was already tracked for each task and it
-enables the user to quickly proceed with their work, whithout having to search
-for a relevant task.
-% TODO include figure once the dashboard is finished...
+enables the user to quickly proceed with their work, without having to search
+for a relevant task first.
 
 The "Projects" page shows a table of all projects that the currently logged in
 user is a part of; this can be seen in Figure \ref{fig:trckr-projects-table}.
@@ -311,9 +302,8 @@ description (see Figure \ref{fig:trckr-create-project}).
 	\label{fig:trckr-create-project}
 \end{figure}
 
-
 Each project can be viewed in more detail by clicking the project name in the
-table shown in figure \ref{fig:trckr-project-page}. The project page contains
+table shown in Figure \ref{fig:trckr-project-page}. The project page contains
 the name, the description and a table of all the tasks in the selected project.
 
 \begin{figure}[h]
@@ -322,13 +312,13 @@ the name, the description and a table of all the tasks in the selected project.
     \label{fig:trckr-project-page}
 \end{figure}
 
-Clicking on a task will display its details like the name and description of
+Clicking on a task will display its details like the name and the description of
 the task.
 
 On the "Time Entries" page, the user can create a time entry for a specific task
 of a project with the entry form shown in Figure
-\ref{fig:trckr-create-time-entry}. The user selects a project and a corresponding
-task for which the time entry should be created.
+\ref{fig:trckr-create-time-entry}. The user selects a project and a
+corresponding task for which the time entry should be created.
 
 \begin{figure}[h]
     \includegraphics[width=0.8\textwidth]{trckr-create-time-entry}
@@ -342,14 +332,14 @@ All time entries will be displayed on the time entries page.
 Scrum describes a framework for agile software development. Agile in this
 context means, that requirements and results can evolve during the development.
 The development team uses Scrum for developing trckr and places the tasks into
-sprints that are two weeks long. The team holds a short meeting every two days
-per week, where every team member presents completed and ongoing tasks. Every
-two weeks there is a sprint review, where the past and upcoming development
-phase gets reviewed and planned. Also, every team member is asked to talk about
-positive and negative experiences during the last sprint. This is called the
-sprint retrospective. Finally, the upcoming sprint has to be planned by the
-team. Every team member estimates the effort for each task the Scrum master (the
-person, who leads Scrum) chose for the upcoming sprint.
+two weeks long periods, so-called sprints. The team holds a short meeting every
+two days per week, where every team member presents completed and ongoing tasks.
+Every two weeks there is a sprint review, where the past and upcoming
+development phase gets reviewed and planned. Also, every team member is asked to
+talk about positive and negative experiences during the last sprint. This is
+called the sprint retrospective. Finally, the upcoming sprint has to be planned
+by the team. Every team member estimates the effort for each task the product
+owner chose for the upcoming sprint.
 
 \section{Outlook}
 By focusing on doing one thing and doing it right, it was possible to create a
@@ -358,7 +348,7 @@ enables open-source contributors to easily extend the trckr application. The
 main focus now should be to gather real life user experience and feedback to
 determine which features should be added next or be improved upon.
 
-Project-focused features can be improved to enable more specific project
+Project-focused features can be extended to enable more specific project
 methods, maybe even an interface with ticketing or project management tools.
 This would enable the team leaders to gain more insight on the progress.
 
