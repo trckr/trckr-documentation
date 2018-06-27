@@ -18,6 +18,7 @@ We list our project contstraints in this section of the documentation.
   * Sprint 3: 13.04.2018 - 27.04.2018
   * Sprint 4: 27.04.2018 - 11.05.2018
   * Sprint 5: 11.05.2018 - 25.05.2018
+  * Sprint 6: 25.05.2018 - 28.06.2018
 
 ### Definition Of Ready
 
