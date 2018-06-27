@@ -47,5 +47,5 @@ The documentation is divided into multiple chapters:
 #### Frontend
 
 * [Gabriel Ankeshian](mailto:ankesgab@students.zhaw.ch)
-* [Angelica Nominator](mailto:moreiane@students.zhaw.ch)
+* [Angelica Nominato](mailto:moreiane@students.zhaw.ch)
 * [David Pacassi Torrico](mailto:pacasdav@students.zhaw.ch)
